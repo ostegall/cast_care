@@ -71,12 +71,8 @@ function HomeScreen({navigation}) {
 function WorsePain ({navigation}) {
     return (
         <View>
-          <Text>Worsening pain; Numbness; Burning; Severe swelling; No movement? Selection
+          <Text style={styles.page_text}>Worsening pain; Numbness; Burning; Severe swelling; No movement? Selection
           </Text>
-          {/* <Pressable style={styles.button} 
-            onPress={() => navigation.goBack()}>
-                <Text style={styles.text}>Go Back</Text>
-            </Pressable> */}
         </View>
       )
 }
@@ -84,7 +80,7 @@ function WorsePain ({navigation}) {
 function Pain({navigation}) {
     return (
         <View>
-          <Text>Pain? Selection
+          <Text style={styles.page_text}>Pain? Selection
           </Text>
         </View>
       )
@@ -93,7 +89,7 @@ function Pain({navigation}) {
 function Tight({navigation}) {
     return (
         <View>
-          <Text>Tight? Selection
+          <Text style={styles.page_text}>Tight? Selection
           </Text>
         </View>
       )
@@ -102,7 +98,7 @@ function Tight({navigation}) {
 function Loose({navigation}) {
     return (
         <View>
-          <Text>Loose? Selection
+          <Text style={styles.page_text}>Loose? Selection
           </Text>
         </View>
       )
@@ -111,7 +107,7 @@ function Loose({navigation}) {
 function Smells({navigation}) {
     return (
         <View>
-          <Text>Smells? Selection
+          <Text style={styles.page_text}>Smells? Selection
           </Text>
         </View>
       )
@@ -120,7 +116,7 @@ function Smells({navigation}) {
 function Rash({navigation}) {
     return (
         <View>
-          <Text>Rash? Selection
+          <Text style={styles.page_text}>Rash? Selection
           </Text>
         </View>
       )
@@ -129,7 +125,7 @@ function Rash({navigation}) {
 function Soiled({navigation}) {
     return (
         <View>
-          <Text>Soiled? Selection
+          <Text style={styles.page_text}>Soiled? Selection
           </Text>
         </View>
       )
@@ -138,7 +134,7 @@ function Soiled({navigation}) {
 function CastBreaking({navigation}) {
     return (
         <View>
-          <Text>Cast Breaking? Selection
+          <Text style={styles.page_text}>Cast Breaking? Selection
           </Text>
         </View>
       )
@@ -147,7 +143,25 @@ function CastBreaking({navigation}) {
 function SomethingInCast({navigation}) {
     return (
         <View>
-          <Text>Something In Cast? Selection
+          <Text style={styles.page_text}>Something In Cast? Selection
+          </Text>
+        </View>
+      )
+}
+
+function Info({navigation}) {
+    return (
+        <View>
+          <Text style={styles.page_text}>Info
+          </Text>
+        </View>
+      )
+}
+
+function Contact({navigation}) {
+    return (
+        <View>
+          <Text style={styles.page_text}>Contact
           </Text>
         </View>
       )
@@ -164,7 +178,31 @@ export default function App() {
                 headerTintColor: '#fff'
             }} 
           /*initialRouteName="Home"*/>
-        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Home" component={HomeScreen} 
+            options={({ navigation }) => ({
+                headerTitle: "Home Page",
+                headerRight: () => (
+                  <Pressable
+                    onPress={() => navigation.navigate('Info')}
+                    style= {styles.header_button}
+                  >
+                      <Text style={styles.text}>
+                          Info
+                      </Text>
+                  </Pressable>
+                ),
+                headerLeft: () => (
+                    <Pressable
+                    onPress={() => navigation.navigate('Contact')}
+                    style= {styles.header_button}
+                    >
+                      <Text style={styles.text}>
+                          Contact
+                      </Text>
+                    </Pressable>
+                ),
+            })}    
+        />
         <Stack.Screen name="Worse Pain/Numbness" component={WorsePain} />
         <Stack.Screen name="Pain" component={Pain} />
         <Stack.Screen name="Cast Breaking" component={CastBreaking} />
@@ -174,6 +212,8 @@ export default function App() {
         <Stack.Screen name="Smells" component={Smells} />
         <Stack.Screen name="Soiled" component={Soiled} />
         <Stack.Screen name="Something In Cast" component={SomethingInCast} />
+        <Stack.Screen name="Info" component={Info} />
+        <Stack.Screen name="Contact" component={Contact} />
 
       </Stack.Navigator>
     </NavigationContainer>
@@ -185,16 +225,33 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
       paddingVertical: 12,
-      paddingHorizontal: 32,
+      paddingHorizontal: 12,
       borderRadius: 4,
       elevation: 3,
       backgroundColor: 'black',
     },
+    header_button: {
+      alignItems: 'center',
+      justifyContent: 'center',
+      paddingVertical: 12,
+      paddingHorizontal: 12,
+      borderRadius: 4,
+      elevation: 3,
+      backgroundColor: '#4B9CD3',
+    },
     text: {
       fontSize: 16,
       lineHeight: 21,
-      fontWeight: 'bold',
+      textAlign: 'center',
+    //   fontWeight: 'bold',
       letterSpacing: 0.25,
       color: 'white',
     },
+    page_text: {
+        fontSize: 14,
+        textAlign: 'center',
+        textAlignVertical: 'center',
+        marginTop: 200,
+        letterSpacing:  0.25,
+    }
   });
