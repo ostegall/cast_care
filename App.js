@@ -7,6 +7,60 @@ import { Text, View, Pressable, StyleSheet, TouchableOpacity } from 'react-nativ
 
 const Stack = createStackNavigator();
 
+function LandingPage({navigation}) {
+  return (
+    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <Pressable style={styles.button} 
+            onPress = {() => {
+                navigation.navigate('Cast Info');
+            }}>
+        <Text style={styles.text}>
+            Click here to read general cast upkeep information
+        </Text>
+      </Pressable>
+      <Pressable style={styles.button} 
+            onPress = {() => {
+                navigation.navigate('Open Screen');
+            }}>
+        <Text style={styles.text}>
+            Click here to diagnose and solve cast issues
+        </Text>
+      </Pressable>      
+    </View>
+  )
+}
+
+function CastInfo({navigation}) {
+  return (
+    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <Text style={styles.page_text}>
+        Cast Info
+      </Text>
+    </View>
+  )
+}
+
+function OpenScreen({navigation}) {
+  return (
+    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <Text style={styles.page_text}>
+          *Insert Liability Statement Here*
+      </Text>
+      <Text>
+          Please Accept to Continue
+      </Text>
+      <Pressable style={styles.button} 
+            onPress = {() => {
+                navigation.navigate('Home');
+            }}>
+        <Text style={styles.text}>
+            Accept
+        </Text>
+      </Pressable>    
+    </View>
+  )
+}
+
 function HomeScreen({navigation}) {
     return (
         <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
@@ -178,42 +232,191 @@ export default function App() {
                 headerTintColor: '#fff'
             }} 
           /*initialRouteName="Home"*/>
-        <Stack.Screen name="Home" component={HomeScreen} 
+        <Stack.Screen name="Landing Page" component={LandingPage} 
             options={({ navigation }) => ({
-                headerTitle: "Home Page",
-                headerRight: () => (
-                  <Pressable
-                    onPress={() => navigation.navigate('Info')}
-                    style= {styles.header_button}
-                  >
-                      <Text style={styles.text}>
-                          Info
-                      </Text>
-                  </Pressable>
-                ),
-                headerLeft: () => (
-                    <Pressable
-                    onPress={() => navigation.navigate('Contact')}
-                    style= {styles.header_button}
-                    >
-                      <Text style={styles.text}>
-                          Contact
-                      </Text>
-                    </Pressable>
-                ),
+                headerTitle: "Landing Page",
             })}    
         />
-        <Stack.Screen name="Worse Pain/Numbness" component={WorsePain} />
-        <Stack.Screen name="Pain" component={Pain} />
-        <Stack.Screen name="Cast Breaking" component={CastBreaking} />
-        <Stack.Screen name="Loose" component={Loose} />
-        <Stack.Screen name="Rash" component={Rash} />
-        <Stack.Screen name="Tight" component={Tight} />
-        <Stack.Screen name="Smells" component={Smells} />
-        <Stack.Screen name="Soiled" component={Soiled} />
-        <Stack.Screen name="Something In Cast" component={SomethingInCast} />
-        <Stack.Screen name="Info" component={Info} />
-        <Stack.Screen name="Contact" component={Contact} />
+        <Stack.Screen name="Cast Info" component={CastInfo} 
+            options={({ navigation }) => ({
+                headerTitle: "Cast Information",
+            })}    
+        />
+        <Stack.Screen name="Open Screen" component={OpenScreen} 
+            options={({ navigation }) => ({
+                headerTitle: "Liability Statement",
+            })}    
+        />
+        <Stack.Screen name="Home" component={HomeScreen} 
+        options={({ navigation }) => ({
+          headerTitle: "Home",
+          headerLeft: () => (
+            <Pressable
+              onPress={() => navigation.navigate('Info')}
+              style= {styles.header_button}
+            >
+                <Text style={styles.text}>
+                    Info
+                </Text>
+            </Pressable>
+          ),
+          headerRight: () => (
+              <Pressable
+              onPress={() => navigation.navigate('Contact')}
+              style= {styles.header_button}
+              >
+                <Text style={styles.text}>
+                    Contact
+                </Text>
+              </Pressable>
+          ),
+      })}    
+        />
+        <Stack.Screen name="Worse Pain/Numbness" component={WorsePain} 
+        options={({ navigation }) => ({
+          headerTitle: "Pain/Numbness",
+          headerRight: () => (
+            <Pressable
+              onPress={() => navigation.navigate('Contact')}
+              style= {styles.header_button}
+            >
+                <Text style={styles.text}>
+                    Contact
+                </Text>
+            </Pressable>
+          ),
+      })}    
+        />
+        <Stack.Screen name="Pain" component={Pain} 
+        options={({ navigation }) => ({
+          headerTitle: "Pain",
+          headerRight: () => (
+            <Pressable
+              onPress={() => navigation.navigate('Contact')}
+              style= {styles.header_button}
+            >
+                <Text style={styles.text}>
+                    Contact
+                </Text>
+            </Pressable>
+          ),
+      })}    
+        />
+        <Stack.Screen name="Cast Breaking" component={CastBreaking} 
+        options={({ navigation }) => ({
+          headerTitle: "Cast Breaking",
+          headerRight: () => (
+            <Pressable
+              onPress={() => navigation.navigate('Contact')}
+              style= {styles.header_button}
+            >
+                <Text style={styles.text}>
+                    Contact
+                </Text>
+            </Pressable>
+          ),
+      })}    
+        />
+        <Stack.Screen name="Loose" component={Loose} 
+        options={({ navigation }) => ({
+          headerTitle: "Loose",
+          headerRight: () => (
+            <Pressable
+              onPress={() => navigation.navigate('Contact')}
+              style= {styles.header_button}
+            >
+                <Text style={styles.text}>
+                    Contact
+                </Text>
+            </Pressable>
+          ),
+      })}    
+        />
+        <Stack.Screen name="Rash" component={Rash} 
+        options={({ navigation }) => ({
+          headerTitle: "Rash",
+          headerRight: () => (
+            <Pressable
+              onPress={() => navigation.navigate('Contact')}
+              style= {styles.header_button}
+            >
+                <Text style={styles.text}>
+                    Contact
+                </Text>
+            </Pressable>
+          ),
+      })}    
+        />
+        <Stack.Screen name="Tight" component={Tight} 
+        options={({ navigation }) => ({
+          headerTitle: "Tight",
+          headerRight: () => (
+            <Pressable
+              onPress={() => navigation.navigate('Contact')}
+              style= {styles.header_button}
+            >
+                <Text style={styles.text}>
+                    Contact
+                </Text>
+            </Pressable>
+          ),
+      })}    
+        />
+        <Stack.Screen name="Smells" component={Smells} 
+        options={({ navigation }) => ({
+          headerTitle: "Smells",
+          headerRight: () => (
+            <Pressable
+              onPress={() => navigation.navigate('Contact')}
+              style= {styles.header_button}
+            >
+                <Text style={styles.text}>
+                    Contact
+                </Text>
+            </Pressable>
+          ),
+      })}    
+        />
+        <Stack.Screen name="Soiled" component={Soiled} 
+        options={({ navigation }) => ({
+          headerTitle: "Soiled",
+          headerRight: () => (
+            <Pressable
+              onPress={() => navigation.navigate('Contact')}
+              style= {styles.header_button}
+            >
+                <Text style={styles.text}>
+                    Contact
+                </Text>
+            </Pressable>
+          ),
+      })}    
+        />
+        <Stack.Screen name="Something In Cast" component={SomethingInCast} 
+        options={({ navigation }) => ({
+          headerTitle: "Something In Cast",
+          headerRight: () => (
+              <Pressable
+              onPress={() => navigation.navigate('Contact')}
+              style= {styles.header_button}
+              >
+                <Text style={styles.text}>
+                    Contact
+                </Text>
+              </Pressable>
+          ),
+      })}    
+        />
+        <Stack.Screen name="Info" component={Info} 
+        options={({ navigation }) => ({
+          headerTitle: "Info",
+      })}    
+        />
+        <Stack.Screen name="Contact" component={Contact} 
+        options={({ navigation }) => ({
+          headerTitle: "Contact",
+      })}    
+        />
 
       </Stack.Navigator>
     </NavigationContainer>
@@ -250,8 +453,8 @@ const styles = StyleSheet.create({
     page_text: {
         fontSize: 14,
         textAlign: 'center',
-        textAlignVertical: 'center',
-        marginTop: 200,
+        //textAlignVertical: 'center',
+       //marginTop: 200,
         letterSpacing:  0.25,
     }
   });
