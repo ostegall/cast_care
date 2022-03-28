@@ -661,7 +661,7 @@ function SomethingInCast({navigation}) { //Solutions for user that has something
           </Pressable>
           </View>
         </View>
-      )
+    )
 }
 
 function CastBreaking({navigation}) { //Solutions for user that has a breaking/broken cast
