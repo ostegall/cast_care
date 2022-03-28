@@ -11,12 +11,12 @@ import createPerformanceLogger from 'react-native/Libraries/Utilities/createPerf
 const url = "https://www.myuncchart.org/myChart/Authentication/Login";
 const Stack = createStackNavigator();
 
-function LandingPage({navigation}) {
+function LandingPage({navigation}) { //Opening Page for user to choose between looking at general cast upkeep or diagnosin & solving cast issues
   return (
     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
       <Pressable style={styles.button} 
             onPress = {() => {
-                navigation.navigate('Cast Info');
+                navigation.navigate('Cast Info'); //navigates to page to look at general cast upkeep
             }}>
         <Text style={styles.text}>
             Click here to read general cast upkeep information
@@ -24,7 +24,7 @@ function LandingPage({navigation}) {
       </Pressable>
       <Pressable style={styles.button} 
             onPress = {() => {
-                navigation.navigate('Open Screen');
+                navigation.navigate('Open Screen'); //navigates to page to diagnose and solve cast issues
             }}>
         <Text style={styles.text}>
             Click here to diagnose and solve cast issues
@@ -33,14 +33,12 @@ function LandingPage({navigation}) {
     </View>
   )
 }
-/*
 
-*/
-function CastInfo({navigation}) {
+function CastInfo({navigation}) { //Page with general cast upkeep
   return (
     <View style={{flex: 1, justifyContent: 'center'}}>
       <Text>
-        {'\u2022'}
+        {'\u2022'} {/* code for a bullet point */}
           <Text style={styles.page_text}>
             Keep cast clean and dry
           </Text>
@@ -60,7 +58,7 @@ function CastInfo({navigation}) {
       <Text>
         {'\u2022'}
           <Text style={styles.page_text}>
-            Elevate above the level of your heart
+            Elevate above the level of patient's heart
           </Text>
       </Text>
       <Text>
@@ -72,7 +70,7 @@ function CastInfo({navigation}) {
       <Text>
         {'\u2022'}
           <Text style={styles.page_text}>
-            You can ice through the cast/splint by using a gel ice pack or making sure the condensation from the ice bag does not get on the cast/splint – some people may or may not be able to feel the ice
+            Patient can ice through the cast/splint by using a gel ice pack or making sure the condensation from the ice bag does not get on the cast/splint; some people may or may not be able to feel the ice
           </Text>
       </Text>
       <Text>
@@ -84,14 +82,14 @@ function CastInfo({navigation}) {
       <Text>
         {'\u2022'}
           <Text style={styles.page_text}>
-            Wiggle fingers as much as you can
+            Wiggle fingers as much as possible
           </Text>
       </Text>
     </View>
   )
 }
 
-function OpenScreen({navigation}) {
+function OpenScreen({navigation}) { //Liability Page for user to accept to reduce client's liability for injuries/nonaction
   return (
     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
       <Text style={styles.page_text}>
@@ -102,7 +100,7 @@ function OpenScreen({navigation}) {
       </Text>
       <Pressable style={styles.button} 
             onPress = {() => {
-                navigation.navigate('Home');
+                navigation.navigate('Home'); //navigates to screen for diagnosing cast issue(s)
             }}>
         <Text style={styles.text}>
             Accept
@@ -111,31 +109,57 @@ function OpenScreen({navigation}) {
     </View>
   )
 }
-//<Text style={styles.text}>Worsening pain; Numbness; Burning; Severe swelling; No movement?</Text>
-function HomeScreen({navigation}) {
+
+function HomeScreen({navigation}) { //Screen where user can select which cast issue(s) they are dealing with
     return (
         <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
           <View style={{flexDirection: 'row'}}>
             <Pressable style={styles.home_button} 
               onPress = {() => {
-                  navigation.navigate('Worse Pain/Numbness');
+                  navigation.navigate('Worse Pain');
               }}>
-              <Text style={styles.text}>Severe symptoms?</Text>
+              <Text style={styles.text}>Worsening Pain?</Text>
             </Pressable>
             <Pressable style={styles.home_button} 
               onPress = {() => {
-                  navigation.navigate('Pain');
+                  navigation.navigate('Numbness');
               }}>
-              <Text style={styles.text}>Pain?</Text>
+              <Text style={styles.text}>Feeling Numb?</Text>
             </Pressable>
+            <Pressable style={styles.home_button} 
+              onPress = {() => {
+                  navigation.navigate('Soiled');
+              }}>
+              <Text style={styles.text}>Soiled or Wet?</Text>
+            </Pressable>
+          </View>
+          <View style={{flexDirection: 'row'}}>
+          <Pressable style={styles.home_button} 
+              onPress = {() => {
+                  navigation.navigate('No Movement');
+              }}>
+              <Text style={styles.text}>No Movement?</Text>
+            </Pressable>
+            <Pressable style={styles.home_button} 
+              onPress = {() => {
+                  navigation.navigate('Swelling');
+              }}>
+              <Text style={styles.text}>Swelling?</Text>
+            </Pressable>
+            <Pressable style={styles.home_button} 
+              onPress = {() => {
+                  navigation.navigate('Burning');
+              }}>
+              <Text style={styles.text}>Burning?</Text>
+            </Pressable>
+          </View>
+          <View style={{flexDirection: 'row'}}>
             <Pressable style={styles.home_button} 
               onPress = {() => {
                   navigation.navigate('Tight');
               }}>
               <Text style={styles.text}>Feel Too Tight?</Text>
             </Pressable>
-          </View>
-          <View style={{flexDirection: 'row'}}>
             <Pressable style={styles.home_button} 
               onPress = {() => {
                   navigation.navigate('Loose');
@@ -147,12 +171,6 @@ function HomeScreen({navigation}) {
                   navigation.navigate('Smells');
               }}>
               <Text style={styles.text}>Smells Bad?</Text>
-            </Pressable>
-            <Pressable style={styles.home_button} 
-              onPress = {() => {
-                  navigation.navigate('Soiled');
-              }}>
-              <Text style={styles.text}>Soiled or Wet?</Text>
             </Pressable>
           </View>
           <View style={{flexDirection: 'row'}}>
@@ -175,29 +193,41 @@ function HomeScreen({navigation}) {
               <Text style={styles.text}>Cast Breaking?</Text>
             </Pressable>
           </View>
-        </View>
+      </View>
     );
 }
 
-function WorsePain ({navigation}) {
+function WorsePain ({navigation}) { //Solutions for user that has worsening pain in cast
     return (
-        <View style={{flex: 1, paddingTop: 200}}>
-          <Text>
-            {'\u2022'}
-            <Text style={styles.page_text}>
-              If you are feeling worsening pain, numbness, burning, severe swelling, or have no movement capabilities, this is an emergency.
-            </Text>
+        <View style={{flex: 1, paddingTop: 160}}>
+          <Text style={styles.header_text }>
+            Problem Description:
           </Text>
-          <Text>
-            {'\u2022'}
-            <Text style={styles.page_text}>
-              Get this issue resolved today, whether at any provider in the same division, OrthoNow, or ED.
-            </Text>
+          <Text style={styles.page_text}>
+            Has patient had increased pain since cast/splint was put on?
+          </Text>
+          <Text style={styles.header_text }>
+            Why this is a Problem:
+          </Text>
+          <Text style={styles.page_text}>
+            If pain is disproportionate to what it was prior to putting on the cast/splint, could mean that the fracture shifted or there is something wrong with the cast/splint.
+          </Text>
+          <Text style={styles.header_text }>
+            Correcting the Problem:
+          </Text>
+          <Text style={styles.page_text}>
+            Some increased pain is normal to feel, as there is some movement when we were casting/splinting you. Pain should subside in a couple of hours.
+          </Text>
+          <Text style={styles.header_text }>
+            Who to Contact:
+          </Text>
+          <Text style={styles.page_text}>
+            Follow-up with the office by calling 984-974-5700 to schedule a same-day appointment or come into the Orthonow walk-in clinic. If patient is not in the NC Triangle area, please go to your local ED.
           </Text>
           <View style={{alignItems: 'center', padding: 50}}>
             <Pressable style={styles.button}
               onPress= {() => {
-                navigation.navigate("Info")
+                navigation.navigate("Info") //Navigates to page for finding nearest hospital
               }}
             >
               <Text style={styles.text}>
@@ -209,31 +239,289 @@ function WorsePain ({navigation}) {
       )
 }
 
-function Pain({navigation}) {
+function Burning({navigation}) { //Solutions for user that has burning in cast
     return (
-        <View style={{flex: 1, paddingTop: 200}}>
-          <Text>
-            {'\u2022'}
-            <Text style={styles.page_text}>
-              If there is pain at the edges of your cast, bend it back with plyers
-            </Text>
+        <View style={{flex: 1, paddingTop: 160}}>
+          <Text style={styles.header_text }>
+            Problem Description:
           </Text>
-          <Text>
-            {'\u2022'}
-            <Text style={styles.page_text}>
-              If there is sharp pain because of your cast, smooth it down with an emery board or sandpaper. You can also use small moleskin or tape to cover the edge of your cast.
-            </Text>
+          <Text style={styles.page_text}>
+            Is there a burning sensation under the cast/splint in a certain area? 
           </Text>
-          <Text>
-            {'\u2022'}
-              <Text style={styles.page_text}>
-                If you cannot easily relieve your pain, you need to solve this issue today by going to any provider in the same division, OrthoNow, or ED.
+          <Text style={styles.header_text }>
+            Why this is a Problem:
+          </Text>
+          <Text style={styles.page_text}>
+            This could indicate that there is an area of rubbing putting pressure on patient's skin. If left untreated, it could lead to skin breakdown and possible infection.
+          </Text>
+          <Text style={styles.header_text }>
+            Correcting the Problem:
+          </Text>
+          <Text style={styles.page_text}>
+            It would be best to be assessed in the office to address this problem. Check patient's skin and make sure there is no signs of skin breakdown.          
+          </Text>
+          <Text style={styles.header_text }>
+            Who to Contact:
+          </Text>
+          <Text style={styles.page_text}>
+            Follow-up with the office by calling 984-974-5700 to schedule a same-day appointment or come into the Orthonow walk-in clinic. If patient is not in the NC Triangle area, please go to your local ED.
+          </Text>
+          <View style={{alignItems: 'center', padding: 50}}>
+            <Pressable style={styles.button}
+              onPress= {() => {
+                navigation.navigate("Info") //Navigates to page for finding nearest hospital
+              }}
+            >
+              <Text style={styles.text}>
+                Find your nearest location
               </Text>
+            </Pressable>
+          </View>
+        </View>
+      )
+}
+
+function Swelling({navigation}) { //Solutions for user that has swelling in cast
+    return (
+        <View style={{flex: 1, paddingTop: 160}}>
+          <Text style={styles.header_text }>
+            Problem Description:
+          </Text>
+          <Text style={styles.page_text}>
+            Has patient had increased swelling near or around their cast/splint since having it applied?
+          </Text>
+          <Text style={styles.header_text }>
+            Why this is a Problem:
+          </Text>
+          <Text style={styles.page_text}>
+            This could indicate that the cast/splint is too tight and restricting circulation to the extremity.
+          </Text>
+          <Text style={styles.header_text }>
+            Correcting the Problem:
+          </Text>
+          <Text style={styles.page_text}>
+            It is important to address this quickly as there are other problems that could result if left untreated.
+          </Text>
+          <Text style={styles.header_text }>
+            Who to Contact:
+          </Text>
+          <Text style={styles.page_text}>
+            Come into the Orthonow walk-in clinic. If patient is not in the NC Triangle area, please go to your local ED.
+          </Text>
+          <View style={{alignItems: 'center', padding: 50}}>
+            <Pressable style={styles.button}
+              onPress= {() => {
+                navigation.navigate("Info") //Navigates to page for finding nearest hospital
+              }}
+            >
+              <Text style={styles.text}>
+                Find your nearest location
+              </Text>
+            </Pressable>
+          </View>
+        </View>
+  )
+}
+
+function NoMovement({navigation}) { //Solutions for user that has no movement in cast
+    return (
+        <View style={{flex: 1, paddingTop: 160}}>
+          <Text style={styles.header_text }>
+            Problem Description:
+          </Text>
+          <Text style={styles.page_text}>
+            No movement of extremity since the cast/splint has been put on. For example: A cast on patient's wrist where they are unable to move fingers.
+          </Text>
+          <Text style={styles.header_text }>
+            Why this is a Problem:
+          </Text>
+          <Text style={styles.page_text}>
+            FILL IN HERE
+          </Text>
+          <Text style={styles.header_text }>
+            Correcting the Problem:
+          </Text>
+          <Text style={styles.page_text}>
+            FILL IN HERE
+          </Text>
+          <Text style={styles.header_text }>
+            Who to Contact:
+          </Text>
+          <Text style={styles.page_text}>
+            Come into the Orthonow walk-in clinic. If patient is not in the NC Triangle area, please go to your local ED.
+          </Text>
+          <View style={{alignItems: 'center', padding: 50}}>
+            <Pressable style={styles.button}
+              onPress= {() => {
+                navigation.navigate("Info") //Navigates to page for finding nearest hospital
+              }}
+            >
+              <Text style={styles.text}>
+                Find your nearest location
+              </Text>
+            </Pressable>
+          </View>
+        </View>
+  )
+}
+
+function Numbness({navigation}) { //Solutions for user that has numbness in cast
+    return (
+        <View style={{flex: 1, paddingTop: 160}}>
+          <Text style={styles.header_text }>
+            Problem Description:
+          </Text>
+          <Text style={styles.page_text}>
+            Are there any areas of numbness? Does patient's limb have a sleepy feeling or pins and needles that is not alleviated by elevation?
+          </Text>
+          <Text style={styles.header_text }>
+            Why this is a Problem:
+          </Text>
+          <Text style={styles.page_text}>
+            If there is numbness, this could indicate that the cast/splint is pinching or rubbing on a nerve, and it needs to be addressed.
+          </Text>
+          <Text style={styles.header_text }>
+            Correcting the Problem:
+          </Text>
+          <Text style={styles.page_text}>
+            Elevate the extremity to see if the numbness goes away. If the numbness does not go away, schedule an appointment.
+          </Text>
+          <Text style={styles.header_text }>
+            Who to Contact:
+          </Text>
+          <Text style={styles.page_text}>
+            Follow-up with the office by calling 984-974-5700 to schedule a same-day appointment or come into the Orthonow walk-in clinic. If patient is not in the NC Triangle area, please go to your local ED.
+          </Text>
+          <View style={{alignItems: 'center', padding: 50}}>
+            <Pressable style={styles.button}
+              onPress= {() => {
+                navigation.navigate("Info") //Navigates to page for finding nearest hospital
+              }}
+            >
+              <Text style={styles.text}>
+                Find your nearest location
+              </Text>
+            </Pressable>
+          </View>
+        </View>
+    )
+}
+
+function Tight({navigation}) { //Solutions for user that has a tight cast
+    return (
+        <View style={{flex: 1, paddingTop: 160}}>
+          <Text style={styles.header_text }>
+            Problem Description:
+          </Text>
+          <Text style={styles.page_text}>
+            There should be room enough for 2 fingers to slide between patient's cast and patient's skin. If there is not enough and the cast is too tight or if there is not enough room between the cast/splint and patient's skin, it could restrict motion.
+          </Text>
+          <Text style={styles.header_text }>
+            Why this is a Problem:
+          </Text>
+          <Text style={styles.page_text}>
+            If the cast is too tight, it could cut off circulation and cause other issues. It is important it is not too tight, elevate extremity 6-8 hours and anytime it is throbbing.
+          </Text>
+          <Text style={styles.header_text }>
+            Correcting the Problem:
+          </Text>
+          <Text style={styles.page_text}>
+            Make sure fingers/toes are not white, swollen, shiny or do not blanch after elevation. If they do, schedule an appointment.
+          </Text>
+          <Text style={styles.header_text }>
+            Who to Contact:
+          </Text>
+          <Text style={styles.page_text}>
+            Follow-up with the office by calling 984-974-5700 to schedule a same-day appointment or come into the Orthonow walk-in clinic. If patient is not in the NC Triangle area, please go to your local ED.
+          </Text>
+          <View style={{alignItems: 'center', padding: 50}}>
+            <Pressable style={styles.button}
+              onPress= {() => {
+                navigation.navigate("Info") //Navigates to page for finding nearest hospital
+              }}
+            >
+              <Text style={styles.text}>
+                Find your nearest location
+              </Text>
+            </Pressable>
+          </View>
+        </View>
+      )
+}
+
+function Loose({navigation}) { //Solutions for user that has loose cast
+    return (
+        <View style={{flex: 1, paddingTop: 160}}>
+          <Text style={styles.header_text }>
+            Problem Description:
+          </Text>
+          <Text style={styles.page_text}>
+            There will be a little bit of wiggle room in the cast, anything beyond 2 fingers between patient's cast and patient's skin is too much.
+          </Text>
+          <Text style={styles.header_text }>
+            Why this is a Problem:
+          </Text>
+          <Text style={styles.page_text}>
+            This could indicate that the cast/splint is no longer supporting the fracture.          
+          </Text>
+          <Text style={styles.header_text }>
+            Correcting the Problem:
+          </Text>
+          <Text style={styles.page_text}>
+            It is important to have a proper fitting cast to assist the healing process.          
+          </Text>
+          <Text style={styles.header_text }>
+            Who to Contact:
+          </Text>
+          <Text style={styles.page_text}>
+            Schedule an appointment in the next 2 business days by calling 984-974-5700. Special consideration: If patient's cast is likely to come off soon, you need to be seen on the same day or come into the Orthonow walk-in clinic.          
+          </Text>
+          <View style={{alignItems: 'center', padding: 50}}>
+            <Pressable style={styles.button}
+              onPress= {() => {
+                navigation.navigate("Info") //Navigates to page for finding nearest hospital
+              }}
+            >
+              <Text style={styles.text}>
+                Find your nearest location
+              </Text>
+            </Pressable>
+          </View>
+        </View>
+      )
+}
+
+function Smells({navigation}) { //Solutions for user that has smelly cast
+    return (
+        <View style={{flex: 1, paddingTop: 160}}>
+          <Text style={styles.header_text }>
+            Problem Description:
+          </Text>
+          <Text style={styles.page_text}>
+            Is there a bad smell coming from patient's cast without a known underlying issue?          
+          </Text>
+          <Text style={styles.header_text }>
+            Why this is a Problem:
+          </Text>
+          <Text style={styles.page_text}>
+            This could indicate that there is an infection underneath the cast/splint. Special considerations: This is normal if patient has known wound concerns, known diabetic ulcers, or bowel/bladder incontinence.          
+          </Text>
+          <Text style={styles.header_text }>
+            Correcting the Problem:
+          </Text>
+          <Text style={styles.page_text}>
+            It is normal to have a smelly cast due to normal body odor related smells. If the smell is too bad it could indicate there is something else going on. When in doubt, get it checked out.          
+          </Text>
+          <Text style={styles.header_text }>
+            Who to Contact:
+          </Text>
+          <Text style={styles.page_text}>
+            Follow-up with the office by calling 984-974-5700 to schedule a same-day appointment or come into the Orthonow walk-in clinic. If patient is not in the NC Triangle area, please go to your local ED.
           </Text>
           <View style={{alignItems: 'center', padding: 50}}>
           <Pressable style={styles.button}
             onPress= {() => {
-              navigation.navigate("Info")
+              navigation.navigate("Info") //Navigates to page for finding nearest hospital
             }}
           >
             <Text style={styles.text}>
@@ -245,25 +533,37 @@ function Pain({navigation}) {
       )
 }
 
-function Tight({navigation}) {
+function Rash({navigation}) { //Solutions for user that has a rash in their cast
     return (
-        <View style={{flex: 1, paddingTop: 200}}>
-          <Text>
-            {'\u2022'}
+        <View style={{flex: 1, paddingTop: 160}}>
+          <Text style={styles.header_text }>
+            Problem Description:
+          </Text>
           <Text style={styles.page_text}>
-            Elevate the extremity with the cast above the heart for 6-8 hours and anytime the extremity is throbbing.
+            Is there a rash or itch inside of patient's cast?          
           </Text>
+          <Text style={styles.header_text }>
+            Why this is a Problem:
           </Text>
-          <Text>
-            {'\u2022'}
           <Text style={styles.page_text}>
-            If fingers or toes are white, swollen, or shiny, do NOT blanch after elevation; this is an emergency that needs to be solved today by going to any provider in the same division, OrthoNow, or ED.
+            This could indicate an allergic reaction. However, it is normal to have some itching underneath the cast.          
           </Text>
+          <Text style={styles.header_text }>
+            Correcting the Problem:
+          </Text>
+          <Text style={styles.page_text}>
+            Never put anything inside of patient's cast/splint. Try tapping the outside of patient's cast/splint. Use a blow dryer with low/cool air or itching another extremity to distract from itching.          
+          </Text>
+          <Text style={styles.header_text }>
+            Who to Contact:
+          </Text>
+          <Text style={styles.page_text}>
+            If symptoms do not get better, patient needs to come into clinic the same day or next day for evaluation. Please call 984-974-5700 to schedule an appointment.          
           </Text>
           <View style={{alignItems: 'center', padding: 50}}>
           <Pressable style={styles.button}
             onPress= {() => {
-              navigation.navigate("Info")
+              navigation.navigate("Info") //Navigates to page for finding nearest hospital
             }}
           >
             <Text style={styles.text}>
@@ -275,132 +575,42 @@ function Tight({navigation}) {
       )
 }
 
-function Loose({navigation}) {
+function Soiled({navigation}) { //Solutions for user that has soiled cast
     return (
-        <View style={{flex: 1, paddingTop: 200}}>
-          <Text>
-            {'\u2022'}
+      <View style={{flex: 1, paddingTop: 160}}>
+          <Text style={styles.header_text }>
+            Problem Description:
+          </Text>
           <Text style={styles.page_text}>
-            Schedule an appointment in the next two days to resolve this issue.
+            Is patient's cast wet or soiled? Has the patient gotten their cast/splint saturated?          
           </Text>
+          <Text style={styles.header_text }>
+            Why this is a Problem:
           </Text>
-          <Text>
-            {'\u2022'}
           <Text style={styles.page_text}>
-            If the cast is likely to come off soon, you should come in today.
+            A wet or soiled cast can lead to skin breakdown and maceration of the skin which can lead to infections if not treated.          
           </Text>
+          <Text style={styles.header_text }>
+            Correcting the Problem:
           </Text>
-          <View style={{alignItems: 'center', padding: 50}}>
-          <Pressable style={styles.button}
-            onPress= {() => {
-              navigation.navigate("Info")
-            }}
-          >
-            <Text style={styles.text}>
-              Find your nearest location
-            </Text>
-          </Pressable>
-          </View>
-        </View>
-      )
-}
-
-function Smells({navigation}) {
-    return (
-        <View style={{flex: 1, paddingTop: 200}}>
-          <Text>
-            {'\u2022'}
           <Text style={styles.page_text}>
-            This is a normal occurence if you have pre-existing conditions like wounds, diabetic ulcers, or bladder/bowel incontinence.
+            Dry with a hairdryer (which can take a while) if patient is able to. If patient's cast is still saturated, schedule an appointment. Special considerations: Soiling is common for spica casts, scoliosis, or clubfoot casts.          
           </Text>
+          <Text style={styles.header_text }>
+            Who to Contact:
           </Text>
-          <Text>
-            {'\u2022'}
           <Text style={styles.page_text}>
-            If there are no pre-existing conditions, you need to solve this today by going to any provider in the same division, OrthoNow, or ED.
+            If patient's cast is completely saturated: send a picture via 
+              <Text style={styles.url_text} //separate text box for an inline link to the UNC MyChart Authentication website
+                onPress={() => Linking.openURL(url)}>
+                MyChart
+              </Text>  
+            . The patient needs to make an appointment within 24 hours. If patient's cast is soiled, clean as well as possible and schedule an appointment wihtin the next three days.      
           </Text>
-          </Text>
-          <View style={{alignItems: 'center', padding: 50}}>
-          <Pressable style={styles.button}
-            onPress= {() => {
-              navigation.navigate("Info")
-            }}
-          >
-            <Text style={styles.text}>
-              Find your nearest location
-            </Text>
-          </Pressable>
-          </View>
-        </View>
-      )
-}
-
-function Rash({navigation}) {
-    return (
-        <View style={{flex: 1, paddingTop: 200}}>
-          <Text>
-            {'\u2022'}
-          <Text style={styles.page_text}>
-            If your cast is itching, NEVER out anything inside of the cast.
-          </Text>
-          </Text>
-          <Text>
-            {'\u2022'}
-          <Text style={styles.page_text}>
-            To fix any rash/itching issues, you should make an appointment for today or the next day at any provider, Orthonow, or ED for evaluation.
-          </Text>
-          </Text>
-          <View style={{alignItems: 'center', padding: 50}}>
-          <Pressable style={styles.button}
-            onPress= {() => {
-              navigation.navigate("Info")
-            }}
-          >
-            <Text style={styles.text}>
-              Find your nearest location
-            </Text>
-          </Pressable>
-          </View>
-        </View>
-      )
-}
-
-function Soiled({navigation}) {
-    return (
-      <View style={{flex: 1, paddingTop: 200}}>
-        <Text>
-          {'\u2022'}
-          <Text style={styles.page_text}>
-            A soiled cast is a common occurence when pre-existing conditions like spica or scoliosis are present. It is also common in clubfoot casts.
-          </Text>
-        </Text>
-        <Text>
-            {'\u2022'}
-          <Text style={styles.page_text}>
-            If the cast is wet, dry it well with a hairdyer for a few hours. Do NOT use powder or a perfumed product when the cast is wet.
-          </Text>
-        </Text>
-        <Text>
-            {'\u2022'}
-          <Text style={styles.page_text}>
-            If the cast is completely saturated (i.e. jumping into a pool with no cast cover), it needs to be changed within 24 hours at any provider, Orthonow, or ED.
-            Furthermore, if the cast is completely saturated, please add a photo to your MyChart account here:   
-            <Text style={styles.url_text}
-              onPress={() => Linking.openURL(url)}>
-              MyChart Website
-            </Text>
-          </Text>
-        </Text>
-        <Text>
-            {'\u2022'}
-          <Text style={styles.page_text}>
-            Otherwise, clean it as well as possible and schedule an appointment at one of these locations within the next 3 days.
-          </Text>
-        </Text>
         <View style={{alignItems: 'center', padding: 50}}>
           <Pressable style={styles.button}
             onPress= {() => {
-              navigation.navigate("Info")
+              navigation.navigate("Info") //Navigates to page for finding nearest hospital
             }}
           >
             <Text style={styles.text}>
@@ -412,25 +622,37 @@ function Soiled({navigation}) {
     )
 }
 
-function CastBreaking({navigation}) {
+function SomethingInCast({navigation}) { //Solutions for user that has something in cast
     return (
-        <View style={{flex: 1, paddingTop: 200}}>
-          <Text>
-            {'\u2022'}
-            <Text style={styles.page_text}>
-              Do NOT walk on a broken cast on a lower extremity and do NOT move a broken cast on an upper extremity.
-            </Text>
+        <View style={{flex: 1, paddingTop: 160}}>
+          <Text style={styles.header_text }>
+            Problem Description:
           </Text>
-          <Text>
-            {'\u2022'}
-            <Text style={styles.page_text}>
-              You need to solve this issue today at any provider, OrthoCare or ED to be evaluated.
-            </Text>
+          <Text style={styles.page_text}>
+            Did something fall inside the cast? Did something get stuck inside of the cast and the patient cannot get it out?
+          </Text>
+          <Text style={styles.header_text }>
+            Why this is a Problem:
+          </Text>
+          <Text style={styles.page_text}>
+            This could lead to a pressure sore and skin breakdown. 
+          </Text>
+          <Text style={styles.header_text }>
+            Correcting the Problem:
+          </Text>
+          <Text style={styles.page_text}>
+            It is important to return to the clinic to be assessed and take the cast off for further assessment. 
+          </Text>
+          <Text style={styles.header_text }>
+            Who to Contact:
+          </Text>
+          <Text style={styles.page_text}>
+            Patient needs to come in the same day or next day to be evaluated. To do so, please call 978-974-5700 or go to UNC Orthonow.
           </Text>
           <View style={{alignItems: 'center', padding: 50}}>
           <Pressable style={styles.button}
             onPress= {() => {
-              navigation.navigate("Info")
+              navigation.navigate("Info") //Navigates to page for finding nearest hospital
             }}
           >
             <Text style={styles.text}>
@@ -442,19 +664,37 @@ function CastBreaking({navigation}) {
       )
 }
 
-function SomethingInCast({navigation}) {
+function CastBreaking({navigation}) { //Solutions for user that has a breaking/broken cast
     return (
-        <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-          <Text>
-            {'\u2022'}
-            <Text style={styles.page_text}>
-              You need to come in today at any provider, OrthoCare or ED to be evaluated by an orthopedic technician.
-            </Text>
+        <View style={{flex: 1, paddingTop: 150}}>
+          <Text style={styles.header_text }>
+            Problem Description:
+          </Text>
+          <Text style={styles.page_text}>
+            Is patient's cast breaking or soft in certain places?          
+          </Text>
+          <Text style={styles.header_text }>
+            Why this is a Problem:
+          </Text>
+          <Text style={styles.page_text}>
+            This could indicate the cast is not thick enough to support patient's fracture.         
+          </Text>
+          <Text style={styles.header_text }>
+            Correcting the Problem:
+          </Text>
+          <Text style={styles.page_text}>
+            It is important to be assessed to get another cast put on to properly support the fracture.          
+          </Text>
+          <Text style={styles.header_text}>
+            Who to Contact:
+          </Text>
+          <Text style={styles.page_text}>
+            Patient needs to come into clinic the same day or next day for evaluation. To do so, please call 984-974-5700 to schedule an appointment.
           </Text>
           <View style={{alignItems: 'center', padding: 50}}>
             <Pressable style={styles.button}
               onPress= {() => {
-                navigation.navigate("Info")
+                navigation.navigate("Info") //Navigates to page for finding nearest hospital
               }}
             >
               <Text style={styles.text}>
@@ -466,11 +706,11 @@ function SomethingInCast({navigation}) {
       )
 }
 
-function Distance(userLat, userLon, locationLat, locationLon) {
+function Distance(userLat, userLon, locationLat, locationLon) { //Helper function to calculate distance between user location and hospital location
   return Math.abs(locationLat - userLat) + Math.abs(locationLon - userLon);
 }
 
-function Info({navigation}) {
+function Info({navigation}) { //Page for determining which type of hospital user would like to find nearest to them
   return (
     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>  
       <Text styles={styles.page_text}>
@@ -478,7 +718,7 @@ function Info({navigation}) {
       </Text>
       <Pressable style={styles.button}
             onPress= {() => {
-              navigation.navigate("UCInfo")
+              navigation.navigate("UCInfo") //Navigates to Urgent Care Page
             }}
       >
         <Text style={styles.text}>
@@ -487,7 +727,7 @@ function Info({navigation}) {
       </Pressable>
       <Pressable style={styles.button}
             onPress= {() => {
-              navigation.navigate("EDInfo")
+              navigation.navigate("EDInfo") //Navigates to Emergency Department Page
             }}
       >
         <Text style={styles.text}>
@@ -498,7 +738,7 @@ function Info({navigation}) {
   )
 }
 
-function UCInfo({navigation}) {
+function UCInfo({navigation}) { //Helper function to calculate which of the two hard-coded Urgent Cares is closest
     const [location, setLocation] = useState(null);
     const [errorMsg, setErrorMsg] = useState(null);
 
@@ -549,7 +789,7 @@ function UCInfo({navigation}) {
       )
 }
 
-function EDInfo({navigation}) {
+function EDInfo({navigation}) { //Helper function to calculate which of the four hard-coded Emergency Departments is closest
   const [location, setLocation] = useState(null);
   const [errorMsg, setErrorMsg] = useState(null);
 
@@ -575,8 +815,8 @@ function EDInfo({navigation}) {
     longitude = location.coords.longitude;
   }
 
-  const latNum = latitude*1;//parseInt(latitude, 10);
-  const lonNum = longitude*1;//parseInt(longitude, 10);
+  const latNum = latitude*1;
+  const lonNum = longitude*1;
 
   let chathamLat = 35.722990;
   let chathamLon = -79.420980;
@@ -634,7 +874,7 @@ function EDInfo({navigation}) {
     )
 }
 
-function Contact({navigation}) {
+function Contact({navigation}) { //Page for contacting UNC Healthcare
     return (
         <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>    
           <Text style={styles.page_text}>
@@ -644,7 +884,7 @@ function Contact({navigation}) {
       )
 }
 
-export default function App() {
+export default function App() { //App Rendering page for different screens
   return (
     <NavigationContainer>
       <Stack.Navigator
@@ -654,7 +894,7 @@ export default function App() {
             },
                 headerTintColor: '#fff'
             }} 
-          /*initialRouteName="Home"*/>
+      >
         <Stack.Screen name="Landing Page" component={LandingPage} 
             options={({ navigation }) => ({
                 headerTitle: "Landing Page",
@@ -673,7 +913,7 @@ export default function App() {
         <Stack.Screen name="Home" component={HomeScreen} 
         options={({ navigation }) => ({
           headerTitle: "Home",
-          headerLeft: () => (
+          headerLeft: () => ( //Home page header button for finding the nearest hospital
             <Pressable
               onPress={() => navigation.navigate('Info')}
               style= {styles.header_button}
@@ -683,7 +923,7 @@ export default function App() {
                 </Text>
             </Pressable>
           ),
-          headerRight: () => (
+          headerRight: () => ( //Home page header button for contact information
               <Pressable
               onPress={() => navigation.navigate('Contact')}
               style= {styles.header_button}
@@ -695,9 +935,24 @@ export default function App() {
           ),
       })}    
         />
-        <Stack.Screen name="Worse Pain/Numbness" component={WorsePain} 
+        <Stack.Screen name="Worse Pain" component={WorsePain} 
         options={({ navigation }) => ({
-          headerTitle: "Pain/Numbness",
+          headerTitle: "Worsening Pain",
+          headerRight: () => ( //Keeps page on finding nearest hospital in header on all solving cast issue(s) pages
+            <Pressable
+              onPress={() => navigation.navigate('Contact')}
+              style= {styles.header_button}
+            >
+                <Text style={styles.text}>
+                    Contact
+                </Text>
+            </Pressable>
+          ),
+      })}    
+        />
+        <Stack.Screen name="Numbness" component={Numbness} 
+        options={({ navigation }) => ({
+          headerTitle: "Numbness",
           headerRight: () => (
             <Pressable
               onPress={() => navigation.navigate('Contact')}
@@ -710,9 +965,39 @@ export default function App() {
           ),
       })}    
         />
-        <Stack.Screen name="Pain" component={Pain} 
+        <Stack.Screen name="No Movement" component={NoMovement} 
         options={({ navigation }) => ({
-          headerTitle: "Pain",
+          headerTitle: "No Movement",
+          headerRight: () => (
+            <Pressable
+              onPress={() => navigation.navigate('Contact')}
+              style= {styles.header_button}
+            >
+                <Text style={styles.text}>
+                    Contact
+                </Text>
+            </Pressable>
+          ),
+      })}    
+        />
+        <Stack.Screen name="Swelling" component={Swelling} 
+        options={({ navigation }) => ({
+          headerTitle: "Swelling",
+          headerRight: () => (
+            <Pressable
+              onPress={() => navigation.navigate('Contact')}
+              style= {styles.header_button}
+            >
+                <Text style={styles.text}>
+                    Contact
+                </Text>
+            </Pressable>
+          ),
+      })}    
+        />
+        <Stack.Screen name="Burning" component={Burning} 
+        options={({ navigation }) => ({
+          headerTitle: "Burning",
           headerRight: () => (
             <Pressable
               onPress={() => navigation.navigate('Contact')}
@@ -856,14 +1141,13 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create({ //different CSS styling for buttons and text
     home_button: {
       alignItems: 'center',
       justifyContent: 'center',
       paddingVertical: 12,
       paddingHorizontal: 12,
       borderRadius: 4,
-      //elevation: 3,
       width: 115,
       borderWidth: 2,
       backgroundColor: 'black',
@@ -887,34 +1171,26 @@ const styles = StyleSheet.create({
       elevation: 3,
       backgroundColor: '#4B9CD3',
     },
+    header_text: {
+      fontSize: 20,
+      fontWeight: "bold",
+      letterSpacing:  0.5,
+    },
     text: {
       fontSize: 16,
       lineHeight: 21,
       textAlign: 'center',
-    //   fontWeight: 'bold',
       letterSpacing: 0.25,
       color: 'white',
     },
     page_text: {
         fontSize: 14,
-        //textAlign: 'center',
-        //textAlignVertical: 'center',
-       //marginTop: 200,
         letterSpacing:  0.5,
     },
     url_text: {
       fontSize: 14,
       textAlign: 'center',
-      //textAlignVertical: 'center',
-     //marginTop: 200,
       letterSpacing:  0.5,
       color: "blue",
   },
-    body: {
-        fontSize: 14,
-        textAlign: 'center',
-        textAlignVertical: 'center',
-         marginTop: 200,
-        letterSpacing:  0.25,
-    }
   });
