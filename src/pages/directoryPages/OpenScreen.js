@@ -7,7 +7,7 @@ export default function OpenScreen({navigation}) { //Liability Page for user to 
       <Text style={styles.page_text}>
           *Insert Liability Statement Here*
       </Text>
-      <Text>
+      <Text style={styles.page_text}>
           Please Accept to Continue
       </Text>
       <Pressable style={styles.button} 

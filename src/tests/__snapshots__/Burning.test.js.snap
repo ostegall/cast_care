@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "paddingTop": 20,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "fontSize": 23,
+        "fontWeight": "bold",
+        "letterSpacing": 0.5,
+        "textAlign": "center",
+      }
+    }
+  >
+    Problem Description:
+  </Text>
+  <Text
+    style={
+      Object {
+        "alignItems": "center",
+        "fontSize": 17,
+        "letterSpacing": 0.5,
+        "marginBottom": 5,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginTop": 5,
+      }
+    }
+  >
+    Is there a burning sensation under the cast/splint in a certain area?
+  </Text>
+  <Text
+    style={
+      Object {
+        "fontSize": 23,
+        "fontWeight": "bold",
+        "letterSpacing": 0.5,
+        "textAlign": "center",
+      }
+    }
+  >
+    Why this is a Problem:
+  </Text>
+  <Text
+    style={
+      Object {
+        "alignItems": "center",
+        "fontSize": 17,
+        "letterSpacing": 0.5,
+        "marginBottom": 5,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginTop": 5,
+      }
+    }
+  >
+    This could indicate that there is an area of rubbing putting pressure on patient's skin. If left untreated, it could lead to skin breakdown and possible infection.
+  </Text>
+  <Text
+    style={
+      Object {
+        "fontSize": 23,
+        "fontWeight": "bold",
+        "letterSpacing": 0.5,
+        "textAlign": "center",
+      }
+    }
+  >
+    Correcting the Problem:
+  </Text>
+  <Text
+    style={
+      Object {
+        "alignItems": "center",
+        "fontSize": 17,
+        "letterSpacing": 0.5,
+        "marginBottom": 5,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginTop": 5,
+      }
+    }
+  >
+    It would be best to be assessed in the office to address this problem. Check patient's skin and make sure there is no signs of skin breakdown.
+  </Text>
+  <Text
+    style={
+      Object {
+        "fontSize": 23,
+        "fontWeight": "bold",
+        "letterSpacing": 0.5,
+        "textAlign": "center",
+      }
+    }
+  >
+    Who to Contact:
+  </Text>
+  <Text
+    style={
+      Object {
+        "alignItems": "center",
+        "fontSize": 17,
+        "letterSpacing": 0.5,
+        "marginBottom": 5,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginTop": 5,
+      }
+    }
+  >
+    Follow-up with the office by calling 984-974-5700 to schedule a same-day appointment or come into the Orthonow walk-in clinic. If patient is not in the NC Triangle area, please go to your local ED.
+  </Text>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "padding": 20,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#4B9CD3",
+          "borderRadius": 10,
+          "elevation": 2,
+          "flexDirection": "row",
+          "height": 80,
+          "justifyContent": "center",
+          "minWidth": 88,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 0.35,
+          "shadowRadius": 5,
+          "width": 120,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+            "fontSize": 14,
+            "letterSpacing": 0.25,
+            "textAlign": "center",
+          }
+        }
+      >
+        Find your nearest location
+      </Text>
+    </View>
+  </View>
+</View>
+`;

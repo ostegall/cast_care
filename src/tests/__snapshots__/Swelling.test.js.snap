@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "paddingTop": 20,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "fontSize": 23,
+        "fontWeight": "bold",
+        "letterSpacing": 0.5,
+        "textAlign": "center",
+      }
+    }
+  >
+    Problem Description:
+  </Text>
+  <Text
+    style={
+      Object {
+        "alignItems": "center",
+        "fontSize": 17,
+        "letterSpacing": 0.5,
+        "marginBottom": 5,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginTop": 5,
+      }
+    }
+  >
+    Has patient had increased swelling near or around their cast/splint since having it applied?
+  </Text>
+  <Text
+    style={
+      Object {
+        "fontSize": 23,
+        "fontWeight": "bold",
+        "letterSpacing": 0.5,
+        "textAlign": "center",
+      }
+    }
+  >
+    Why this is a Problem:
+  </Text>
+  <Text
+    style={
+      Object {
+        "alignItems": "center",
+        "fontSize": 17,
+        "letterSpacing": 0.5,
+        "marginBottom": 5,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginTop": 5,
+      }
+    }
+  >
+    This could indicate that the cast/splint is too tight and restricting circulation to the extremity.
+  </Text>
+  <Text
+    style={
+      Object {
+        "fontSize": 23,
+        "fontWeight": "bold",
+        "letterSpacing": 0.5,
+        "textAlign": "center",
+      }
+    }
+  >
+    Correcting the Problem:
+  </Text>
+  <Text
+    style={
+      Object {
+        "alignItems": "center",
+        "fontSize": 17,
+        "letterSpacing": 0.5,
+        "marginBottom": 5,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginTop": 5,
+      }
+    }
+  >
+    It is important to address this quickly as there are other problems that could result if left untreated.
+  </Text>
+  <Text
+    style={
+      Object {
+        "fontSize": 23,
+        "fontWeight": "bold",
+        "letterSpacing": 0.5,
+        "textAlign": "center",
+      }
+    }
+  >
+    Who to Contact:
+  </Text>
+  <Text
+    style={
+      Object {
+        "alignItems": "center",
+        "fontSize": 17,
+        "letterSpacing": 0.5,
+        "marginBottom": 5,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginTop": 5,
+      }
+    }
+  >
+    Come into the Orthonow walk-in clinic. If patient is not in the NC Triangle area, please go to your local ED.
+  </Text>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "padding": 20,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#4B9CD3",
+          "borderRadius": 10,
+          "elevation": 2,
+          "flexDirection": "row",
+          "height": 80,
+          "justifyContent": "center",
+          "minWidth": 88,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 0.35,
+          "shadowRadius": 5,
+          "width": 120,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+            "fontSize": 14,
+            "letterSpacing": 0.25,
+            "textAlign": "center",
+          }
+        }
+      >
+        Find your nearest location
+      </Text>
+    </View>
+  </View>
+</View>
+`;

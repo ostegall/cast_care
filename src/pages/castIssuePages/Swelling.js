@@ -3,7 +3,7 @@ import styles from '../../styles';
 
 export default function Swelling({navigation}) { //Solutions for user that has swelling in cast
     return (
-        <View style={{flex: 1, paddingTop: 160}}>
+        <View style={{flex: 1, paddingTop: 20}}>
           <Text style={styles.header_text }>
             Problem Description:
           </Text>
@@ -28,7 +28,7 @@ export default function Swelling({navigation}) { //Solutions for user that has s
           <Text style={styles.page_text}>
             Come into the Orthonow walk-in clinic. If patient is not in the NC Triangle area, please go to your local ED.
           </Text>
-          <View style={{alignItems: 'center', padding: 50}}>
+          <View style={{alignItems: 'center', padding: 20}}>
             <Pressable style={styles.button}
               onPress= {() => {
                 navigation.navigate("Info") //Navigates to page for finding nearest hospital

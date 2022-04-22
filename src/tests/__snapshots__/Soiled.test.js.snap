@@ -1,0 +1,255 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "paddingTop": 20,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "fontSize": 23,
+        "fontWeight": "bold",
+        "letterSpacing": 0.5,
+        "textAlign": "center",
+      }
+    }
+  >
+    Problem Description:
+  </Text>
+  <Text
+    style={
+      Object {
+        "alignItems": "center",
+        "fontSize": 17,
+        "letterSpacing": 0.5,
+        "marginBottom": 5,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginTop": 5,
+      }
+    }
+  >
+    Is patient's cast wet or soiled? Has the patient gotten their cast/splint saturated?
+  </Text>
+  <Text
+    style={
+      Object {
+        "fontSize": 23,
+        "fontWeight": "bold",
+        "letterSpacing": 0.5,
+        "textAlign": "center",
+      }
+    }
+  >
+    Why this is a Problem:
+  </Text>
+  <Text
+    style={
+      Object {
+        "alignItems": "center",
+        "fontSize": 17,
+        "letterSpacing": 0.5,
+        "marginBottom": 5,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginTop": 5,
+      }
+    }
+  >
+    A wet or soiled cast can lead to skin breakdown and maceration of the skin which can lead to infections if not treated.
+  </Text>
+  <Text
+    style={
+      Object {
+        "fontSize": 23,
+        "fontWeight": "bold",
+        "letterSpacing": 0.5,
+        "textAlign": "center",
+      }
+    }
+  >
+    Correcting the Problem:
+  </Text>
+  <Text
+    style={
+      Object {
+        "alignItems": "center",
+        "fontSize": 17,
+        "letterSpacing": 0.5,
+        "marginBottom": 5,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginTop": 5,
+      }
+    }
+  >
+    Dry with a hairdryer (which can take a while) if patient is able to. If patient's cast is still saturated, schedule an appointment. Special considerations: Soiling is common for spica casts, scoliosis, or clubfoot casts.
+  </Text>
+  <Text
+    style={
+      Object {
+        "fontSize": 23,
+        "fontWeight": "bold",
+        "letterSpacing": 0.5,
+        "textAlign": "center",
+      }
+    }
+  >
+    Who to Contact:
+  </Text>
+  <Text
+    style={
+      Object {
+        "alignItems": "center",
+        "fontSize": 17,
+        "letterSpacing": 0.5,
+        "marginBottom": 5,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginTop": 5,
+      }
+    }
+  >
+    If patient's cast is completely saturated: send a picture via
+    <Text
+      onPress={[Function]}
+      style={
+        Object {
+          "color": "blue",
+          "fontSize": 14,
+          "letterSpacing": 0.5,
+          "textAlign": "center",
+        }
+      }
+    >
+      MyChart
+    </Text>
+    . The patient needs to make an appointment within 24 hours. If patient's cast is soiled, clean as well as possible and schedule an appointment wihtin the next three days.
+  </Text>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "row",
+          "height": 83,
+          "marginLeft": 24,
+          "marginRight": 23,
+          "marginTop": 20,
+        }
+      }
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#4B9CD3",
+            "borderRadius": 10,
+            "elevation": 2,
+            "flexDirection": "row",
+            "height": 80,
+            "justifyContent": "center",
+            "minWidth": 88,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "shadowColor": "#000",
+            "shadowOffset": Object {
+              "height": 1,
+              "width": 0,
+            },
+            "shadowOpacity": 0.35,
+            "shadowRadius": 5,
+            "width": 120,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "white",
+              "fontSize": 14,
+              "letterSpacing": 0.25,
+              "textAlign": "center",
+            }
+          }
+        >
+          Find your nearest location
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#4B9CD3",
+            "borderRadius": 10,
+            "elevation": 2,
+            "flexDirection": "row",
+            "height": 80,
+            "justifyContent": "center",
+            "minWidth": 88,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "shadowColor": "#000",
+            "shadowOffset": Object {
+              "height": 1,
+              "width": 0,
+            },
+            "shadowOpacity": 0.35,
+            "shadowRadius": 5,
+            "width": 120,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "white",
+              "fontSize": 14,
+              "letterSpacing": 0.25,
+              "textAlign": "center",
+            }
+          }
+        >
+          Show image of soiled cast
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

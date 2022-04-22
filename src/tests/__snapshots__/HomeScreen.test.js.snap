@@ -1,0 +1,686 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "paddingBottom": 30,
+        "paddingTop": 20,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 23,
+          "fontWeight": "bold",
+          "letterSpacing": 0.5,
+          "textAlign": "center",
+        }
+      }
+    >
+      Issue Diagnosis
+    </Text>
+    <Text
+      style={
+        Object {
+          "alignItems": "center",
+          "fontSize": 17,
+          "letterSpacing": 0.5,
+          "marginBottom": 5,
+          "marginLeft": 20,
+          "marginRight": 20,
+          "marginTop": 5,
+        }
+      }
+    >
+      What issue(s) can we help you solve?
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#4B9CD3",
+          "borderRadius": 5,
+          "elevation": 2,
+          "flexDirection": "row",
+          "height": 85,
+          "justifyContent": "center",
+          "minWidth": 88,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 0.35,
+          "shadowRadius": 5,
+          "width": 160,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+            "fontSize": 25,
+            "letterSpacing": 0.25,
+            "textAlign": "center",
+          }
+        }
+      >
+        Worsening Pain
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#4B9CD3",
+          "borderRadius": 5,
+          "elevation": 2,
+          "flexDirection": "row",
+          "height": 85,
+          "justifyContent": "center",
+          "minWidth": 88,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 0.35,
+          "shadowRadius": 5,
+          "width": 160,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+            "fontSize": 25,
+            "letterSpacing": 0.25,
+            "textAlign": "center",
+          }
+        }
+      >
+        Numbness
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#4B9CD3",
+          "borderRadius": 5,
+          "elevation": 2,
+          "flexDirection": "row",
+          "height": 85,
+          "justifyContent": "center",
+          "minWidth": 88,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 0.35,
+          "shadowRadius": 5,
+          "width": 160,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+            "fontSize": 25,
+            "letterSpacing": 0.25,
+            "textAlign": "center",
+          }
+        }
+      >
+        Soiled or Wet Cast
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#4B9CD3",
+          "borderRadius": 5,
+          "elevation": 2,
+          "flexDirection": "row",
+          "height": 85,
+          "justifyContent": "center",
+          "minWidth": 88,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 0.35,
+          "shadowRadius": 5,
+          "width": 160,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+            "fontSize": 25,
+            "letterSpacing": 0.25,
+            "textAlign": "center",
+          }
+        }
+      >
+        Difficulty Moving
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#4B9CD3",
+          "borderRadius": 5,
+          "elevation": 2,
+          "flexDirection": "row",
+          "height": 85,
+          "justifyContent": "center",
+          "minWidth": 88,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 0.35,
+          "shadowRadius": 5,
+          "width": 160,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+            "fontSize": 25,
+            "letterSpacing": 0.25,
+            "textAlign": "center",
+          }
+        }
+      >
+        Swelling
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#4B9CD3",
+          "borderRadius": 5,
+          "elevation": 2,
+          "flexDirection": "row",
+          "height": 85,
+          "justifyContent": "center",
+          "minWidth": 88,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 0.35,
+          "shadowRadius": 5,
+          "width": 160,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+            "fontSize": 25,
+            "letterSpacing": 0.25,
+            "textAlign": "center",
+          }
+        }
+      >
+        Burning
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#4B9CD3",
+          "borderRadius": 5,
+          "elevation": 2,
+          "flexDirection": "row",
+          "height": 85,
+          "justifyContent": "center",
+          "minWidth": 88,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 0.35,
+          "shadowRadius": 5,
+          "width": 160,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+            "fontSize": 25,
+            "letterSpacing": 0.25,
+            "textAlign": "center",
+          }
+        }
+      >
+        Tight Cast
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#4B9CD3",
+          "borderRadius": 5,
+          "elevation": 2,
+          "flexDirection": "row",
+          "height": 85,
+          "justifyContent": "center",
+          "minWidth": 88,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 0.35,
+          "shadowRadius": 5,
+          "width": 160,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+            "fontSize": 25,
+            "letterSpacing": 0.25,
+            "textAlign": "center",
+          }
+        }
+      >
+        Loose Cast
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#4B9CD3",
+          "borderRadius": 5,
+          "elevation": 2,
+          "flexDirection": "row",
+          "height": 85,
+          "justifyContent": "center",
+          "minWidth": 88,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 0.35,
+          "shadowRadius": 5,
+          "width": 160,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+            "fontSize": 25,
+            "letterSpacing": 0.25,
+            "textAlign": "center",
+          }
+        }
+      >
+        Smelly Cast
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#4B9CD3",
+          "borderRadius": 5,
+          "elevation": 2,
+          "flexDirection": "row",
+          "height": 85,
+          "justifyContent": "center",
+          "minWidth": 88,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 0.35,
+          "shadowRadius": 5,
+          "width": 160,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+            "fontSize": 25,
+            "letterSpacing": 0.25,
+            "textAlign": "center",
+          }
+        }
+      >
+        Rash or Itching
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#4B9CD3",
+          "borderRadius": 5,
+          "elevation": 2,
+          "flexDirection": "row",
+          "height": 85,
+          "justifyContent": "center",
+          "minWidth": 88,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 0.35,
+          "shadowRadius": 5,
+          "width": 160,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+            "fontSize": 25,
+            "letterSpacing": 0.25,
+            "textAlign": "center",
+          }
+        }
+      >
+        Something In Cast
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#4B9CD3",
+          "borderRadius": 5,
+          "elevation": 2,
+          "flexDirection": "row",
+          "height": 85,
+          "justifyContent": "center",
+          "minWidth": 88,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 0.35,
+          "shadowRadius": 5,
+          "width": 160,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+            "fontSize": 25,
+            "letterSpacing": 0.25,
+            "textAlign": "center",
+          }
+        }
+      >
+        Breaking Cast
+      </Text>
+    </View>
+  </View>
+</View>
+`;

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "alignItems": "center",
+        "fontSize": 17,
+        "letterSpacing": 0.5,
+        "marginBottom": 5,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginTop": 5,
+      }
+    }
+  >
+    Your nearest Emergency Department is loading...
+  </Text>
+</View>
+`;

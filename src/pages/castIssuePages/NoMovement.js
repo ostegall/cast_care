@@ -3,7 +3,7 @@ import styles from '../../styles';
 
 export default function NoMovement({navigation}) { //Solutions for user that has no movement in cast
     return (
-        <View style={{flex: 1, paddingTop: 160}}>
+        <View style={{flex: 1, paddingTop: 20}}>
           <Text style={styles.header_text }>
             Problem Description:
           </Text>
@@ -14,13 +14,13 @@ export default function NoMovement({navigation}) { //Solutions for user that has
             Why this is a Problem:
           </Text>
           <Text style={styles.page_text}>
-            FILL IN HERE
+            This could indicate that there is excessive pressure on the nerves and blood vessels and they are unable to relieve pressure.
           </Text>
           <Text style={styles.header_text }>
             Correcting the Problem:
           </Text>
           <Text style={styles.page_text}>
-            FILL IN HERE
+            It is very important to be seen as soon as possible to get your cast removed.
           </Text>
           <Text style={styles.header_text }>
             Who to Contact:
@@ -28,7 +28,7 @@ export default function NoMovement({navigation}) { //Solutions for user that has
           <Text style={styles.page_text}>
             Come into the Orthonow walk-in clinic. If patient is not in the NC Triangle area, please go to your local ED.
           </Text>
-          <View style={{alignItems: 'center', padding: 50}}>
+          <View style={{alignItems: 'center', padding: 20}}>
             <Pressable style={styles.button}
               onPress= {() => {
                 navigation.navigate("Info") //Navigates to page for finding nearest hospital
