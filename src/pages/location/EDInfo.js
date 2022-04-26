@@ -1,15 +1,13 @@
 import React from 'react';
-import { Text, View, Pressable, Linking } from 'react-native';
+import { Text, View, Linking } from 'react-native';
 import styles from '../../styles';
 import Distance from './distance.js'
-import * as Location from 'expo-location';
-import { useState, useEffect } from 'react';
 import coordinates from './coordinates.js';
-import { WebView } from 'react-native-webview';
 let url = "";
 let phone_url = "";
 
-export default function EDInfo() { //Helper function to calculate which of the four hard-coded Emergency Departments is closest
+export default function EDInfo() {
+  //Helper function to calculate which of the four hard-coded Emergency Departments is closest
 
   let errorMsg, location = coordinates();
 
@@ -31,10 +29,7 @@ export default function EDInfo() { //Helper function to calculate which of the f
   const latNum = latitude * 1;
   const lonNum = longitude * 1;
 
-  // console.log(latNum);
-  // console.log(lonNum);
-
-  if (latNum == 0 && lonNum == 0) {
+  if (latNum == 0 && lonNum == 0) { //waiting for location and latitude to come in
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text style={styles.page_text}>
@@ -42,7 +37,7 @@ export default function EDInfo() { //Helper function to calculate which of the f
         </Text>
       </View>
     )
-  } else {
+  } else { //calculate which hardcoded emergency department is closest
     let chathamLat = 35.722990;
     let chathamLon = -79.420980;
 
@@ -121,7 +116,7 @@ export default function EDInfo() { //Helper function to calculate which of the f
       address = address2;
       url = url2;
       phone = phone2;
-      phone_url = phone2;
+      phone_url = phone_url2;
     }
 
     return (
@@ -132,7 +127,7 @@ export default function EDInfo() { //Helper function to calculate which of the f
         <View style={{ paddingTop: 20 }}>
           <Text style={styles.location_text}>
             Address:
-            <Text style={styles.url_text} //separate text box for an inline link to adrress
+            <Text style={styles.url_text} //separate text box for an inline link to open address in Google Maps
               onPress={() => Linking.openURL(url)}>
               {address}
             </Text>
@@ -140,7 +135,11 @@ export default function EDInfo() { //Helper function to calculate which of the f
         </View>
         <View style={{ paddingTop: 20 }}>
           <Text style={styles.location_text}>
-            Phone Number: {phone}
+            Phone Number:
+            <Text style={styles.url_text} //separate text box for an inline link to call emergency department
+              onPress={() => Linking.openURL(phone_url)}>
+              {phone}
+            </Text>
           </Text>
         </View>
       </View >

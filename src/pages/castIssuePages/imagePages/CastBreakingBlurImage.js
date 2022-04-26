@@ -3,6 +3,7 @@ import React from 'react';
 import styles from '../../../styles';
 
 export default class CastBreakingBlurImage extends React.Component {
+    //React Native page for rendering blurred/unblurred image of broken cast dependent on user cliking button
     constructor(props) {
         super(props)
 
@@ -15,12 +16,15 @@ export default class CastBreakingBlurImage extends React.Component {
         return (
             <View>
                 <View style={{ alignItems: 'center', paddingTop: 60 }}>
-                    <Text style={styles.header_text}>
+                    <Text style={styles.title_text}>
                         Breaking Cast Image
                     </Text>
                 </View>
                 <View style={{ alignItems: 'center' }}>
-                    {this.state.blurred ? <Image source={require('../../../img/castbreakingblur.jpeg')} style={{ resizeMode: 'cover', }} /> : <Image source={require('../../../img/castbreaking.jpeg')} style={{ resizeMode: 'cover' }} />}
+                    {this.state.blurred ?
+                        <Image source={require('../../../img/castbreakingblur.jpeg')} style={{ resizeMode: 'cover', }} /*blurred image*/ />
+                        :
+                        <Image source={require('../../../img/castbreaking.jpeg')} style={{ resizeMode: 'cover' }} /*unblurred image*/ />}
                 </View>
                 <View style={{ alignItems: 'center' }}>
                     <Text style={styles.page_text}>
@@ -30,10 +34,10 @@ export default class CastBreakingBlurImage extends React.Component {
                 <View style={{ alignItems: 'center' }}>
                     <Pressable style={styles.button}
                         onPress={() => {
-                            this.setState({ blurred: !this.state.blurred });
+                            this.setState({ blurred: !this.state.blurred }); //blur/unblur button
                         }}
                     >
-                        {this.state.blurred ? <Text style={styles.text}>Click to unblur image</Text> : <Text style={styles.text}>Click to blur image</Text>}
+                        {this.state.blurred ? <Text style={styles.button_text}>Click to unblur image</Text> : <Text style={styles.button_text}>Click to blur image</Text>}
                     </Pressable>
                 </View>
             </View>

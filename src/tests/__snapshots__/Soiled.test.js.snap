@@ -120,14 +120,18 @@ exports[`renders correctly 1`] = `
       onPress={[Function]}
       style={
         Object {
+          "alignItems": "center",
           "color": "blue",
-          "fontSize": 14,
+          "fontSize": 17,
           "letterSpacing": 0.5,
-          "textAlign": "center",
+          "marginBottom": 5,
+          "marginLeft": 20,
+          "marginRight": 20,
+          "marginTop": 5,
         }
       }
     >
-      MyChart
+       MyChart
     </Text>
     . The patient needs to make an appointment within 24 hours. If patient's cast is soiled, clean as well as possible and schedule an appointment wihtin the next three days.
   </Text>
@@ -167,7 +171,7 @@ exports[`renders correctly 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "backgroundColor": "#4B9CD3",
+            "backgroundColor": "#4292c7",
             "borderRadius": 10,
             "elevation": 2,
             "flexDirection": "row",
@@ -216,7 +220,7 @@ exports[`renders correctly 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "backgroundColor": "#4B9CD3",
+            "backgroundColor": "#4292c7",
             "borderRadius": 10,
             "elevation": 2,
             "flexDirection": "row",

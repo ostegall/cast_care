@@ -115,7 +115,25 @@ exports[`renders correctly 1`] = `
       }
     }
   >
-    Schedule an appointment in the next 2 business days by calling 984-974-5700. Special consideration: If patient's cast is likely to come off soon, you need to be seen on the same day or come into the Orthonow walk-in clinic.
+    Schedule an appointment in the next 2 business days by calling
+    <Text
+      onPress={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "color": "blue",
+          "fontSize": 17,
+          "letterSpacing": 0.5,
+          "marginBottom": 5,
+          "marginLeft": 20,
+          "marginRight": 20,
+          "marginTop": 5,
+        }
+      }
+    >
+       (984)-974-5700
+    </Text>
+    . Special consideration: If patient's cast is likely to come off soon, you need to be seen on the same day or come into the Orthonow walk-in clinic.
   </Text>
   <View
     style={
@@ -153,7 +171,7 @@ exports[`renders correctly 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "backgroundColor": "#4B9CD3",
+            "backgroundColor": "#4292c7",
             "borderRadius": 10,
             "elevation": 2,
             "flexDirection": "row",
@@ -202,7 +220,7 @@ exports[`renders correctly 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "backgroundColor": "#4B9CD3",
+            "backgroundColor": "#4292c7",
             "borderRadius": 10,
             "elevation": 2,
             "flexDirection": "row",

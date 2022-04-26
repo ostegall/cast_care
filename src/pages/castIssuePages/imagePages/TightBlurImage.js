@@ -3,9 +3,10 @@ import React from 'react';
 import styles from '../../../styles';
 
 export default class TightBlurImage extends React.Component {
+    //React Native page for rendering blurred/unblurred image of tight cast dependent on user cliking button
     constructor(props) {
         super(props)
-        
+
         this.state = {
             blurred: true,
         }
@@ -14,26 +15,29 @@ export default class TightBlurImage extends React.Component {
     render() {
         return (
             <View>
-                <View style={{alignItems: 'center', paddingTop: 60}}>
-                    <Text style={styles.header_text }>
+                <View style={{ alignItems: 'center', paddingTop: 60 }}>
+                    <Text style={styles.title_text}>
                         Tight Cast Image
                     </Text>
                 </View>
-                <View style={{alignItems: 'center'}}>
-                    {this.state.blurred ? <Image source={require('../../../img/tightblur.png')} style={{resizeMode: 'cover', }} /> : <Image source={require('../../../img/tightcast.png')} style={{resizeMode: 'cover'}} />}
+                <View style={{ alignItems: 'center' }}>
+                    {this.state.blurred ?
+                        <Image source={require('../../../img/tightblur.png')} style={{ resizeMode: 'cover', }} /*blurred image*/ />
+                        :
+                        <Image source={require('../../../img/tightcast.png')} style={{ resizeMode: 'cover' }} /*unblurred image*/ />}
                 </View>
                 <View style={{ alignItems: 'center' }}>
                     <Text style={styles.page_text}>
                         Warning: image may be graphic, use discretion
                     </Text>
                 </View>
-                <View style={{alignItems: 'center'}}>
+                <View style={{ alignItems: 'center' }}>
                     <Pressable style={styles.button}
-                    onPress= {() => {
-                        this.setState({blurred: !this.state.blurred});
-                    }}
+                        onPress={() => {
+                            this.setState({ blurred: !this.state.blurred }); //blur/unblur button
+                        }}
                     >
-                        {this.state.blurred ? <Text style={styles.text }>Click to unblur image</Text> : <Text style={styles.text }>Click to blur image</Text>}
+                        {this.state.blurred ? <Text style={styles.button_text}>Click to unblur image</Text> : <Text style={styles.button_text}>Click to blur image</Text>}
                     </Pressable>
                 </View>
             </View>

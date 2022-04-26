@@ -115,7 +115,25 @@ exports[`renders correctly 1`] = `
       }
     }
   >
-    Patient needs to come into clinic the same day or next day for evaluation. To do so, please call 984-974-5700 to schedule an appointment.
+    Patient needs to come into clinic the same day or next day for evaluation. To do so, please call
+    <Text
+      onPress={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "color": "blue",
+          "fontSize": 17,
+          "letterSpacing": 0.5,
+          "marginBottom": 5,
+          "marginLeft": 20,
+          "marginRight": 20,
+          "marginTop": 5,
+        }
+      }
+    >
+       (984)-974-5700 
+    </Text>
+    to schedule an appointment.
   </Text>
   <View
     style={
@@ -153,7 +171,7 @@ exports[`renders correctly 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "backgroundColor": "#4B9CD3",
+            "backgroundColor": "#4292c7",
             "borderRadius": 10,
             "elevation": 2,
             "flexDirection": "row",
@@ -202,7 +220,7 @@ exports[`renders correctly 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "backgroundColor": "#4B9CD3",
+            "backgroundColor": "#4292c7",
             "borderRadius": 10,
             "elevation": 2,
             "flexDirection": "row",

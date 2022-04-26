@@ -34,36 +34,36 @@ import FAQ from './src/pages/directoryPages/FAQ.js';
 
 const Stack = createStackNavigator();
 
-export default function App() { //App Rendering page for different screens
+export default function App() { //App Rendering page for different screens 
   return (
     <NavigationContainer>
       <Stack.Navigator
-        screenOptions={{
+        screenOptions={{ //header styling for all pages
           headerStyle: {
             backgroundColor: '#4292c7'
           },
           headerTintColor: '#fff'
         }}
       >
-        <Stack.Screen name="Landing Page" component={LandingPage}
-          options={({ navigation }) => ({
+        <Stack.Screen name="Landing Page" component={LandingPage} //Page for deciding between solving cast issues and getting cast upkeep tips
+          options={({ }) => ({
             headerTitle: "Landing Page",
           })}
         />
-        <Stack.Screen name="Cast Info" component={CastInfo}
-          options={({ navigation }) => ({
+        <Stack.Screen name="Cast Info" component={CastInfo} //Page with cast upkeep info
+          options={({ }) => ({
             headerTitle: "Cast Care Instructions",
           })}
         />
-        <Stack.Screen name="Open Screen" component={OpenScreen}
-          options={({ navigation }) => ({
+        <Stack.Screen name="Open Screen" component={OpenScreen} //Page with liability statement for user to accept
+          options={({ }) => ({
             headerTitle: "Liability Statement",
           })}
         />
         <Stack.Screen name="Home" component={HomeScreen}
           options={({ navigation }) => ({
             headerTitle: "Home",
-            headerLeft: () => ( //Home page header button for finding the nearest hospital
+            headerLeft: () => ( //Header button for finding the nearest hospital
               <Pressable
                 onPress={() => navigation.navigate('Info')}
                 style={styles.header_button}
@@ -71,7 +71,7 @@ export default function App() { //App Rendering page for different screens
                 <Icon type="feather" name='map' size={19} color='white' />
               </Pressable>
             ),
-            headerRight: () => ( //Home page header button for contact information
+            headerRight: () => ( //Header button for contact information
               <Pressable
                 onPress={() => navigation.navigate('FAQ')}
                 style={styles.header_button}
@@ -81,7 +81,7 @@ export default function App() { //App Rendering page for different screens
             ),
           })}
         />
-        <Stack.Screen name="Worse Pain" component={WorsePain}
+        <Stack.Screen name="Worse Pain" component={WorsePain} //Following are pages for cast issues, dependent on name
           options={({ navigation }) => ({
             headerTitle: "Worsening Pain",
             headerRight: () => ( //Keeps page on finding nearest hospital in header on all solving cast issue(s) pages
@@ -237,7 +237,7 @@ export default function App() { //App Rendering page for different screens
             ),
           })}
         />
-        <Stack.Screen name="Tight Blur" component={TightBlur}
+        <Stack.Screen name="Tight Blur" component={TightBlur} //The following 'Blur' Pages are for showing images of cast issues (w/ a blur)
           options={({ navigation }) => ({
             headerTitle: "Tight Image",
             headerRight: () => (
@@ -328,23 +328,23 @@ export default function App() { //App Rendering page for different screens
             ),
           })}
         />
-        <Stack.Screen name="Info" component={Info}
-          options={({ navigation }) => ({
+        <Stack.Screen name="Info" component={Info} //Page for deciding which hospital to search for
+          options={({ }) => ({
             headerTitle: "Nearest Hospital",
           })}
         />
-        <Stack.Screen name="UCInfo" component={UCInfo}
-          options={({ navigation }) => ({
+        <Stack.Screen name="UCInfo" component={UCInfo} //Page for finding nearest Urgent Care
+          options={({ }) => ({
             headerTitle: "Find Urgent Care",
           })}
         />
-        <Stack.Screen name="EDInfo" component={EDInfo}
-          options={({ navigation }) => ({
+        <Stack.Screen name="EDInfo" component={EDInfo} //Page for finding nearest Emergency Department
+          options={({ }) => ({
             headerTitle: "Find Emergency Department",
           })}
         />
-        <Stack.Screen name="FAQ" component={FAQ}
-          options={({ navigation }) => ({
+        <Stack.Screen name="FAQ" component={FAQ} //FAQ (and About) Page
+          options={({ }) => ({
             headerTitle: "FAQ and About",
           })}
         />

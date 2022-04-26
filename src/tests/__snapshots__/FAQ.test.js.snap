@@ -49,7 +49,8 @@ exports[`renders correctly 1`] = `
       }
     }
   >
-    If you feel as though you have an issue with your cast that does not fall under one of the categories we cover here, please contact your orthopedic surgeon.
+    •
+     If you feel as though you have an issue with your cast that does not fall under one of the categories we cover here, please contact your provider.
   </Text>
   <Text
     style={
@@ -79,7 +80,8 @@ exports[`renders correctly 1`] = `
       }
     }
   >
-    No, this app does not collect or store any data about its users.
+    •
+     No, this app does not collect or store any data about its users.
   </Text>
   <Text
     style={
@@ -109,7 +111,8 @@ exports[`renders correctly 1`] = `
       }
     }
   >
-    The information in the app would still apply, except you do not have to go to a UNC hospital as the app suggests
+    •
+     The information in the app would still apply, except you do not have to go to a UNC hospital as the app suggests
   </Text>
   <View
     style={

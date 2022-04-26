@@ -1,158 +1,234 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<View
-  style={
-    Object {
-      "flex": 1,
-      "justifyContent": "center",
-    }
-  }
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
 >
-  <Text>
-    •
-     
-    <Text
-      style={
-        Object {
-          "alignItems": "center",
-          "fontSize": 17,
-          "letterSpacing": 0.5,
-          "marginBottom": 5,
-          "marginLeft": 20,
-          "marginRight": 20,
-          "marginTop": 5,
-        }
+  <RCTScrollView
+    style={
+      Object {
+        "marginTop": 10,
       }
-    >
-      Keep cast clean and dry
-    </Text>
-  </Text>
-  <Text>
-    •
-    <Text
-      style={
-        Object {
-          "alignItems": "center",
-          "fontSize": 17,
-          "letterSpacing": 0.5,
-          "marginBottom": 5,
-          "marginLeft": 20,
-          "marginRight": 20,
-          "marginTop": 5,
+    }
+  >
+    <View>
+      <Text
+        style={
+          Object {
+            "fontSize": 23,
+            "fontWeight": "bold",
+            "letterSpacing": 0.5,
+            "textAlign": "center",
+          }
         }
-      }
-    >
-      Do not stick anything inside of cast or splint
-    </Text>
-  </Text>
-  <Text>
-    •
-    <Text
-      style={
-        Object {
-          "alignItems": "center",
-          "fontSize": 17,
-          "letterSpacing": 0.5,
-          "marginBottom": 5,
-          "marginLeft": 20,
-          "marginRight": 20,
-          "marginTop": 5,
+      >
+        DO
+      </Text>
+      <Text
+        style={
+          Object {
+            "alignItems": "center",
+            "fontSize": 17,
+            "letterSpacing": 0.5,
+            "marginBottom": 5,
+            "marginLeft": 20,
+            "marginRight": 20,
+            "marginTop": 5,
+          }
         }
-      }
-    >
-      If cast/splint becomes itchy: blow dry on low cool air, tap, or itch other side
-    </Text>
-  </Text>
-  <Text>
-    •
-    <Text
-      style={
-        Object {
-          "alignItems": "center",
-          "fontSize": 17,
-          "letterSpacing": 0.5,
-          "marginBottom": 5,
-          "marginLeft": 20,
-          "marginRight": 20,
-          "marginTop": 5,
+      >
+        •
+         Do keep your cast clean and dry at all times.
+      </Text>
+      <Text
+        style={
+          Object {
+            "alignItems": "center",
+            "fontSize": 17,
+            "letterSpacing": 0.5,
+            "marginBottom": 5,
+            "marginLeft": 20,
+            "marginRight": 20,
+            "marginTop": 5,
+          }
         }
-      }
-    >
-      Elevate above the level of patient's heart
-    </Text>
-  </Text>
-  <Text>
-    •
-    <Text
-      style={
-        Object {
-          "alignItems": "center",
-          "fontSize": 17,
-          "letterSpacing": 0.5,
-          "marginBottom": 5,
-          "marginLeft": 20,
-          "marginRight": 20,
-          "marginTop": 5,
+      >
+        •
+         Do cover your cast with a plastic bag or cast cover for bathing or showering, but do not submerge your cast in the water. The bag or cover may leak and is only helpful to protect against splashes.
+      </Text>
+      <Text
+        style={
+          Object {
+            "alignItems": "center",
+            "fontSize": 17,
+            "letterSpacing": 0.5,
+            "marginBottom": 5,
+            "marginLeft": 20,
+            "marginRight": 20,
+            "marginTop": 5,
+          }
         }
-      }
-    >
-      It is normal to have increased pain right after a cast/splint is put on due to moving the fracture
-    </Text>
-  </Text>
-  <Text>
-    •
-    <Text
-      style={
-        Object {
-          "alignItems": "center",
-          "fontSize": 17,
-          "letterSpacing": 0.5,
-          "marginBottom": 5,
-          "marginLeft": 20,
-          "marginRight": 20,
-          "marginTop": 5,
+      >
+        •
+         Do use a hair dryer on cool air setting to dry your cast if it gets wet by blowing air under the cast.
+      </Text>
+      <Text
+        style={
+          Object {
+            "alignItems": "center",
+            "fontSize": 17,
+            "letterSpacing": 0.5,
+            "marginBottom": 5,
+            "marginLeft": 20,
+            "marginRight": 20,
+            "marginTop": 5,
+          }
         }
-      }
-    >
-      Patient can ice through the cast/splint by using a gel ice pack or making sure the condensation from the ice bag does not get on the cast/splint; some people may or may not be able to feel the ice
-    </Text>
-  </Text>
-  <Text>
-    •
-    <Text
-      style={
-        Object {
-          "alignItems": "center",
-          "fontSize": 17,
-          "letterSpacing": 0.5,
-          "marginBottom": 5,
-          "marginLeft": 20,
-          "marginRight": 20,
-          "marginTop": 5,
+      >
+        •
+         Do cover any rough edges of your cast with tape to prevent skin irritation.
+      </Text>
+      <Text
+        style={
+          Object {
+            "alignItems": "center",
+            "fontSize": 17,
+            "letterSpacing": 0.5,
+            "marginBottom": 5,
+            "marginLeft": 20,
+            "marginRight": 20,
+            "marginTop": 5,
+          }
         }
-      }
-    >
-      No powders or lotions down cast/splint
-    </Text>
-  </Text>
-  <Text>
-    •
-    <Text
-      style={
-        Object {
-          "alignItems": "center",
-          "fontSize": 17,
-          "letterSpacing": 0.5,
-          "marginBottom": 5,
-          "marginLeft": 20,
-          "marginRight": 20,
-          "marginTop": 5,
+      >
+        •
+         Do elevate your cast above your heart if you have increased swelling, pain, numbness, tingling or change in color or circulation. If this does not relieve the symptoms, please contact your provider.
+      </Text>
+      <Text
+        style={
+          Object {
+            "alignItems": "center",
+            "fontSize": 17,
+            "letterSpacing": 0.5,
+            "marginBottom": 5,
+            "marginLeft": 20,
+            "marginRight": 20,
+            "marginTop": 5,
+          }
         }
-      }
-    >
-      Wiggle fingers as much as possible
-    </Text>
-  </Text>
-</View>
+      >
+        •
+         Do contact your provider if your cast is damaged, cracked, or extremely wet. The cast will need to be changed.
+      </Text>
+      <Text
+        style={
+          Object {
+            "alignItems": "center",
+            "fontSize": 17,
+            "letterSpacing": 0.5,
+            "marginBottom": 5,
+            "marginLeft": 20,
+            "marginRight": 20,
+            "marginTop": 5,
+          }
+        }
+      >
+        •
+         Do contact your provider is there is any red skin irritation, blisters or sores around the edges of the cast or inside the cast.
+      </Text>
+      <Text
+        style={
+          Object {
+            "fontSize": 23,
+            "fontWeight": "bold",
+            "letterSpacing": 0.5,
+            "textAlign": "center",
+          }
+        }
+      >
+        DON'T
+      </Text>
+      <Text
+        style={
+          Object {
+            "alignItems": "center",
+            "fontSize": 17,
+            "letterSpacing": 0.5,
+            "marginBottom": 5,
+            "marginLeft": 20,
+            "marginRight": 20,
+            "marginTop": 5,
+          }
+        }
+      >
+        •
+         Do not pull out any padding from under your cast.
+      </Text>
+      <Text
+        style={
+          Object {
+            "alignItems": "center",
+            "fontSize": 17,
+            "letterSpacing": 0.5,
+            "marginBottom": 5,
+            "marginLeft": 20,
+            "marginRight": 20,
+            "marginTop": 5,
+          }
+        }
+      >
+        •
+         Do not get your cast wet. If you were told that your cast was applied using water resistant cast padding, you may shower or swim in a pool only, but must dry the lining of the cast after you finish with a cool air hair dryer to prevent skin breakdown.
+      </Text>
+      <Text
+        style={
+          Object {
+            "alignItems": "center",
+            "fontSize": 17,
+            "letterSpacing": 0.5,
+            "marginBottom": 5,
+            "marginLeft": 20,
+            "marginRight": 20,
+            "marginTop": 5,
+          }
+        }
+      >
+        •
+         Do not stick anything into your cast to itch. Use a cool hairdryer to relieve any itching or irritation.
+      </Text>
+      <Text
+        style={
+          Object {
+            "alignItems": "center",
+            "fontSize": 17,
+            "letterSpacing": 0.5,
+            "marginBottom": 5,
+            "marginLeft": 20,
+            "marginRight": 20,
+            "marginTop": 5,
+          }
+        }
+      >
+        •
+         Do not rest the heel of your leg cast on a pillow or bed. Keep your heel floating off the surface by elevating the leg with a pillow or blanket roll under the calf to prevent sores.
+      </Text>
+      <Text
+        style={
+          Object {
+            "alignItems": "center",
+            "fontSize": 17,
+            "letterSpacing": 0.5,
+            "marginBottom": 5,
+            "marginLeft": 20,
+            "marginRight": 20,
+            "marginTop": 5,
+          }
+        }
+      >
+        •
+         Do not change or remove your cast without permission from your provider.
+      </Text>
+    </View>
+  </RCTScrollView>
+</RCTSafeAreaView>
 `;

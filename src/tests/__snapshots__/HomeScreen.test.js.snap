@@ -69,11 +69,11 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "backgroundColor": "#4B9CD3",
+          "backgroundColor": "#4292c7",
           "borderRadius": 5,
           "elevation": 2,
           "flexDirection": "row",
-          "height": 85,
+          "height": 100,
           "justifyContent": "center",
           "minWidth": 88,
           "paddingLeft": 16,
@@ -89,18 +89,9 @@ exports[`renders correctly 1`] = `
         }
       }
     >
-      <Text
-        style={
-          Object {
-            "color": "white",
-            "fontSize": 25,
-            "letterSpacing": 0.25,
-            "textAlign": "center",
-          }
-        }
-      >
-        Worsening Pain
-      </Text>
+      <Image
+        source={1}
+      />
     </View>
     <View
       accessible={true}
@@ -118,11 +109,11 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "backgroundColor": "#4B9CD3",
+          "backgroundColor": "#4292c7",
           "borderRadius": 5,
           "elevation": 2,
           "flexDirection": "row",
-          "height": 85,
+          "height": 100,
           "justifyContent": "center",
           "minWidth": 88,
           "paddingLeft": 16,
@@ -138,18 +129,9 @@ exports[`renders correctly 1`] = `
         }
       }
     >
-      <Text
-        style={
-          Object {
-            "color": "white",
-            "fontSize": 25,
-            "letterSpacing": 0.25,
-            "textAlign": "center",
-          }
-        }
-      >
-        Numbness
-      </Text>
+      <Image
+        source={1}
+      />
     </View>
   </View>
   <View
@@ -175,11 +157,11 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "backgroundColor": "#4B9CD3",
+          "backgroundColor": "#4292c7",
           "borderRadius": 5,
           "elevation": 2,
           "flexDirection": "row",
-          "height": 85,
+          "height": 100,
           "justifyContent": "center",
           "minWidth": 88,
           "paddingLeft": 16,
@@ -195,18 +177,9 @@ exports[`renders correctly 1`] = `
         }
       }
     >
-      <Text
-        style={
-          Object {
-            "color": "white",
-            "fontSize": 25,
-            "letterSpacing": 0.25,
-            "textAlign": "center",
-          }
-        }
-      >
-        Soiled or Wet Cast
-      </Text>
+      <Image
+        source={1}
+      />
     </View>
     <View
       accessible={true}
@@ -224,11 +197,11 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "backgroundColor": "#4B9CD3",
+          "backgroundColor": "#4292c7",
           "borderRadius": 5,
           "elevation": 2,
           "flexDirection": "row",
-          "height": 85,
+          "height": 100,
           "justifyContent": "center",
           "minWidth": 88,
           "paddingLeft": 16,
@@ -244,18 +217,9 @@ exports[`renders correctly 1`] = `
         }
       }
     >
-      <Text
-        style={
-          Object {
-            "color": "white",
-            "fontSize": 25,
-            "letterSpacing": 0.25,
-            "textAlign": "center",
-          }
-        }
-      >
-        Difficulty Moving
-      </Text>
+      <Image
+        source={1}
+      />
     </View>
   </View>
   <View
@@ -281,11 +245,11 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "backgroundColor": "#4B9CD3",
+          "backgroundColor": "#4292c7",
           "borderRadius": 5,
           "elevation": 2,
           "flexDirection": "row",
-          "height": 85,
+          "height": 100,
           "justifyContent": "center",
           "minWidth": 88,
           "paddingLeft": 16,
@@ -301,18 +265,9 @@ exports[`renders correctly 1`] = `
         }
       }
     >
-      <Text
-        style={
-          Object {
-            "color": "white",
-            "fontSize": 25,
-            "letterSpacing": 0.25,
-            "textAlign": "center",
-          }
-        }
-      >
-        Swelling
-      </Text>
+      <Image
+        source={1}
+      />
     </View>
     <View
       accessible={true}
@@ -330,11 +285,11 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "backgroundColor": "#4B9CD3",
+          "backgroundColor": "#4292c7",
           "borderRadius": 5,
           "elevation": 2,
           "flexDirection": "row",
-          "height": 85,
+          "height": 100,
           "justifyContent": "center",
           "minWidth": 88,
           "paddingLeft": 16,
@@ -350,18 +305,9 @@ exports[`renders correctly 1`] = `
         }
       }
     >
-      <Text
-        style={
-          Object {
-            "color": "white",
-            "fontSize": 25,
-            "letterSpacing": 0.25,
-            "textAlign": "center",
-          }
-        }
-      >
-        Burning
-      </Text>
+      <Image
+        source={1}
+      />
     </View>
   </View>
   <View
@@ -387,11 +333,11 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "backgroundColor": "#4B9CD3",
+          "backgroundColor": "#4292c7",
           "borderRadius": 5,
           "elevation": 2,
           "flexDirection": "row",
-          "height": 85,
+          "height": 100,
           "justifyContent": "center",
           "minWidth": 88,
           "paddingLeft": 16,
@@ -407,18 +353,9 @@ exports[`renders correctly 1`] = `
         }
       }
     >
-      <Text
-        style={
-          Object {
-            "color": "white",
-            "fontSize": 25,
-            "letterSpacing": 0.25,
-            "textAlign": "center",
-          }
-        }
-      >
-        Tight Cast
-      </Text>
+      <Image
+        source={1}
+      />
     </View>
     <View
       accessible={true}
@@ -436,11 +373,11 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "backgroundColor": "#4B9CD3",
+          "backgroundColor": "#4292c7",
           "borderRadius": 5,
           "elevation": 2,
           "flexDirection": "row",
-          "height": 85,
+          "height": 100,
           "justifyContent": "center",
           "minWidth": 88,
           "paddingLeft": 16,
@@ -456,18 +393,9 @@ exports[`renders correctly 1`] = `
         }
       }
     >
-      <Text
-        style={
-          Object {
-            "color": "white",
-            "fontSize": 25,
-            "letterSpacing": 0.25,
-            "textAlign": "center",
-          }
-        }
-      >
-        Loose Cast
-      </Text>
+      <Image
+        source={1}
+      />
     </View>
   </View>
   <View
@@ -493,11 +421,11 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "backgroundColor": "#4B9CD3",
+          "backgroundColor": "#4292c7",
           "borderRadius": 5,
           "elevation": 2,
           "flexDirection": "row",
-          "height": 85,
+          "height": 100,
           "justifyContent": "center",
           "minWidth": 88,
           "paddingLeft": 16,
@@ -513,18 +441,9 @@ exports[`renders correctly 1`] = `
         }
       }
     >
-      <Text
-        style={
-          Object {
-            "color": "white",
-            "fontSize": 25,
-            "letterSpacing": 0.25,
-            "textAlign": "center",
-          }
-        }
-      >
-        Smelly Cast
-      </Text>
+      <Image
+        source={1}
+      />
     </View>
     <View
       accessible={true}
@@ -542,11 +461,11 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "backgroundColor": "#4B9CD3",
+          "backgroundColor": "#4292c7",
           "borderRadius": 5,
           "elevation": 2,
           "flexDirection": "row",
-          "height": 85,
+          "height": 100,
           "justifyContent": "center",
           "minWidth": 88,
           "paddingLeft": 16,
@@ -562,18 +481,9 @@ exports[`renders correctly 1`] = `
         }
       }
     >
-      <Text
-        style={
-          Object {
-            "color": "white",
-            "fontSize": 25,
-            "letterSpacing": 0.25,
-            "textAlign": "center",
-          }
-        }
-      >
-        Rash or Itching
-      </Text>
+      <Image
+        source={1}
+      />
     </View>
   </View>
   <View
@@ -599,11 +509,11 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "backgroundColor": "#4B9CD3",
+          "backgroundColor": "#4292c7",
           "borderRadius": 5,
           "elevation": 2,
           "flexDirection": "row",
-          "height": 85,
+          "height": 100,
           "justifyContent": "center",
           "minWidth": 88,
           "paddingLeft": 16,
@@ -619,18 +529,9 @@ exports[`renders correctly 1`] = `
         }
       }
     >
-      <Text
-        style={
-          Object {
-            "color": "white",
-            "fontSize": 25,
-            "letterSpacing": 0.25,
-            "textAlign": "center",
-          }
-        }
-      >
-        Something In Cast
-      </Text>
+      <Image
+        source={1}
+      />
     </View>
     <View
       accessible={true}
@@ -648,11 +549,11 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "backgroundColor": "#4B9CD3",
+          "backgroundColor": "#4292c7",
           "borderRadius": 5,
           "elevation": 2,
           "flexDirection": "row",
-          "height": 85,
+          "height": 100,
           "justifyContent": "center",
           "minWidth": 88,
           "paddingLeft": 16,
@@ -668,18 +569,9 @@ exports[`renders correctly 1`] = `
         }
       }
     >
-      <Text
-        style={
-          Object {
-            "color": "white",
-            "fontSize": 25,
-            "letterSpacing": 0.25,
-            "textAlign": "center",
-          }
-        }
-      >
-        Breaking Cast
-      </Text>
+      <Image
+        source={1}
+      />
     </View>
   </View>
 </View>

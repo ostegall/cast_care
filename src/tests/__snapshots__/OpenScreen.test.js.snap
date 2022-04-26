@@ -56,7 +56,7 @@ exports[`renders correctly 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "backgroundColor": "#4B9CD3",
+        "backgroundColor": "#4292c7",
         "borderRadius": 10,
         "elevation": 2,
         "flexDirection": "row",

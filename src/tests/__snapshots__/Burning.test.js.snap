@@ -115,7 +115,25 @@ exports[`renders correctly 1`] = `
       }
     }
   >
-    Follow-up with the office by calling 984-974-5700 to schedule a same-day appointment or come into the Orthonow walk-in clinic. If patient is not in the NC Triangle area, please go to your local ED.
+    Follow-up with the office by calling
+    <Text
+      onPress={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "color": "blue",
+          "fontSize": 17,
+          "letterSpacing": 0.5,
+          "marginBottom": 5,
+          "marginLeft": 20,
+          "marginRight": 20,
+          "marginTop": 5,
+        }
+      }
+    >
+       (984)-974-5700 
+    </Text>
+    to schedule a same-day appointment or come into the Orthonow walk-in clinic. If patient is not in the NC Triangle area, please go to your local ED.
   </Text>
   <View
     style={
@@ -141,7 +159,7 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "backgroundColor": "#4B9CD3",
+          "backgroundColor": "#4292c7",
           "borderRadius": 10,
           "elevation": 2,
           "flexDirection": "row",

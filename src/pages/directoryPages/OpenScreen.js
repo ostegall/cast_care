@@ -1,7 +1,9 @@
 import { Text, View, Pressable } from 'react-native';
 import styles from '../../styles';
 
-export default function OpenScreen({navigation}) { //Liability Page for user to accept to reduce client's liability for injuries/nonaction
+export default function OpenScreen({navigation}) { 
+  /*Liability Page for user to accept to reduce client's liability for injuries/nonaction 
+  (client did not receive liability statement from their legal before end of semester)*/
   return (
     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
       <Text style={styles.page_text}>
@@ -14,7 +16,7 @@ export default function OpenScreen({navigation}) { //Liability Page for user to 
             onPress = {() => {
                 navigation.navigate('Home'); //navigates to screen for diagnosing cast issue(s)
             }}>
-        <Text style={styles.text}>
+        <Text style={styles.button_text}>
             Accept
         </Text>
       </Pressable>    

@@ -12,5 +12,3 @@ it('renders correctly', () => {
     const tree = renderer.create(<EDInfo />).toJSON();
     expect(tree).toMatchSnapshot();
   });
-
-//ED and UC tests for correct closest hospital
