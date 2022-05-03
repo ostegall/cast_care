@@ -84,7 +84,7 @@ export default function App() { //App Rendering page for different screens
         <Stack.Screen name="Worse Pain" component={WorsePain} //Following are pages for cast issues, dependent on name
           options={({ navigation }) => ({
             headerTitle: "Worsening Pain",
-            headerRight: () => ( //Keeps page on finding nearest hospital in header on all solving cast issue(s) pages
+            headerRight: () => ( //Keeps page on finding nearest hospital in header on all solving cast issue(s) pages (repeated below)
               <Pressable
                 onPress={() => navigation.navigate('FAQ')}
                 style={styles.header_button}
