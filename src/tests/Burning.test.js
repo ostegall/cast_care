@@ -1,5 +1,5 @@
 import renderer from 'react-test-renderer';
-import { shallow, mount } from 'enzyme'
+import { shallow } from 'enzyme'
 import React from "react";
 
 import Burning from '../pages/castIssuePages/Burning';

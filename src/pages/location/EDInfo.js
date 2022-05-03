@@ -9,14 +9,14 @@ let phone_url = "";
 export default function EDInfo() {
   //Helper function to calculate which of the four hard-coded Emergency Departments is closest
 
-  let errorMsg, location = coordinates();
+  let errorMsg, location = coordinates(); //errorMsg has text if there is an error; location is latitude and longitude of user's location
 
   let latitude = '';
   let longitude = '';
   if (errorMsg) {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text style={styles.page_text}>
+        <Text style={styles.page_text} /* error text for when user does not allow location access */>
           Please allow location access
         </Text>
       </View>
@@ -72,14 +72,14 @@ export default function EDInfo() {
     if (Distance(latNum, lonNum, chathamLat, chathamLon) < Distance(latNum, lonNum, rexLat, rexLon)) {
       hosp1Lat = chathamLat;
       hosp1Lon = chathamLon;
-      hospital1 = "Chatham Hospital Emergency Department";
-      address1 = " 475 Progress Blvd, Siler City, NC, 27344";
-      url1 = "https://goo.gl/maps/B6xnSEw8ZrkW8b4i7"
-      phone1 = "(919)-799-4000";
-      phone_url1 = "tel://+19197994000";
+      hospital1 = "Chatham Hospital Emergency Department"; //location name text
+      address1 = " 475 Progress Blvd, Siler City, NC, 27344"; //address text
+      url1 = "https://goo.gl/maps/B6xnSEw8ZrkW8b4i7" //link to open google maps of address
+      phone1 = "(919)-799-4000"; //text for phone number
+      phone_url1 = "tel://+19197994000"; //link to pull up pop up to call phone number
     } else {
       hosp1Lat = rexLat;
-      hosp1Lon = rexLon
+      hosp1Lon = rexLon;
       hospital1 = "REX Healthcare Emergency Department";
       address1 = " 4420 Lake Boone Trail, Raleigh, NC 27607";
       url1 = "https://goo.gl/maps/PnTGnEsq7aJQUdRz5";

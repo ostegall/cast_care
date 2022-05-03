@@ -46,11 +46,11 @@ export default function UCInfo() {
     let phone = '';
 
     if (Distance(latNum, lonNum, uncHospLat, uncHospLon) > Distance(latNum, lonNum, pantherCreekLat, pantherCreekLon)) {
-      hospital = 'UNC Orthopedics at Panther Creek';
-      address = ' 6715 McCrimmon Parkway, Cary, NC, 27519';
-      url = "https://g.page/panthercreekoffice?share";
-      phone = "(919)-781-5600"
-      phone_url = "tel://+19197815600";
+      hospital = 'UNC Orthopedics at Panther Creek'; //location name text
+      address = ' 6715 McCrimmon Parkway, Cary, NC, 27519'; //address text
+      url = "https://g.page/panthercreekoffice?share"; //link to open google maps of address
+      phone = "(919)-781-5600" //text for phone number
+      phone_url = "tel://+19197815600"; //link to pull up pop up to call phone number
     } else {
       hospital = 'Chapel Hill Orthopedics';
       address = ' 6011 Farrington Rd, Chapel Hill, NC, 27517';
